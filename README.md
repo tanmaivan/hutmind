@@ -54,7 +54,7 @@ pip requirement.txt
 
 3. Create a cluster on [Qdrant Cloud](https://cloud.qdrant.io/) and obtain the connection details (URL and API Key).
 
-4. Create an instance on [Neo4j Aura] (https://neo4j.com/cloud/aura/), then obtain the connection details (URI, username, password).
+4. Create an instance on [Neo4j Aura](https://neo4j.com/cloud/aura/), then obtain the connection details (URI, username, password).
 
 5. Create a **Google API Key** from [Google AI Studio](https://aistudio.google.com/apikey).
 
