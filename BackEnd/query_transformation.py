@@ -1,36 +1,41 @@
 from langchain_google_genai import ChatGoogleGenerativeAI
-from langchain.prompts import ChatPromptTemplate
+from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.output_parsers import StrOutputParser
 from config import GOOGLE_API_KEY
 
 class QueryTransformer:
-    def __init__(self, model="gemini-1.5-flash", temperature=0.3):
-        # Prompt
+    def __init__(self, model="gemini-2.5-flash", temperature=0.1):
+        # Prompt definition
         self.transform_prompt = ChatPromptTemplate.from_template("""
-        Bạn là một mô hình phân tích câu hỏi. Nhiệm vụ của bạn là xử lý câu hỏi (hoặc câu khẳng định) của người dùng theo từng bước sau:
-        1. Nếu câu hỏi là không hoàn toàn tiếng Việt, trả về Kết quả: Xin lỗi, tôi không hiểu bạn đang nói gì, vui lòng sử dụng tiếng Việt.
-        2. Sửa lỗi chính tả, gõ sai, viết tắt cho câu hỏi trong tiếng Việt. Ví dụ: Tôi li hôn đc k? -> Tôi ly hôn được không?, thũ tụt -> thủ tục
-        3. NẾU CÂU HỎI CÓ NHIỀU Ý HỎI, tách chúng thành từng câu hỏi riêng biệt. Với mỗi câu hỏi thực hiện các bước tiếp theo.
-        4. NẾU CÂU HỎI chứa **SỐ ĐIỀU/SỐ CHƯƠNG cụ thể** và NẾU trong lịch sử trò chuyện gần nhất có chứa:
-            + "Vui lòng chọn Điều cụ thể.", thì ý định của câu hỏi là: **Khoản <số Khoản trong lịch sử> Điều <SỐ/SỐ ĐIỀU trong câu hỏi>. Ngược lại ý định là: Điều <SỐ/SỐ ĐIỀU trong câu hỏi> **
-            + "Vui lòng chọn Chương cụ thể", thì ý định của câu hỏi là: **Mục <số Mục trong lịch sử> Chương <SỐ/SỐ CHƯƠNG trong câu hỏi>. Ngược lại ý định là: Chương <SỐ/SỐ CHƯƠNG trong câu hỏi> **
-        5. **NẾU CÂU HỎI KHÔNG RÕ RÀNG HOẶC CHƯA ĐẦY ĐỦ**, hãy sử dụng lịch sử trò chuyện được cung cấp **CHỈ KHI LỊCH SỬ LIÊN QUAN TRỰC TIẾP ĐẾN CÂU HỎI** để làm rõ ý nghĩa và ngữ cảnh truy vấn của người dùng. **KHÔNG ĐƯỢC THAY ĐỔI NỘI DUNG CHÍNH CỦA CÂU HỎI**.
-        6. Suy ra nội dung chính của câu hỏi (hoặc câu khẳng định) thật đơn giản, rõ ràng và dễ hiểu (dùng các từ ngữ trong luật Hôn nhân và Gia đình nếu có thể), **BỎ QUA ĐẠI TỪ DANH XƯNG NẾU CÓ THỂ**. Ví dụ: Tôi là nữ 16 tuổi thì có lấy chồng được không? -> Nữ 16 tuổi có đủ điều kiện kết hôn không?
+        Bạn là một AI phân tích ngôn ngữ. Nhiệm vụ của bạn là làm rõ câu hỏi của người dùng dựa trên lịch sử hội thoại.
+        
+        Quy tắc:
+        1. Sửa lỗi chính tả, viết tắt (VD: "ko" -> "không", "wfh" -> "làm việc từ xa").
+        2. NẾU câu hỏi có chứa nhiều ý, hoặc chứa các từ như "và", "gồm", "bao gồm", BẮT BUỘC phải tách chúng thành các câu hỏi đơn lẻ và ngăn cách bằng dấu "|".
+           - Ví dụ 1: "Giới thiệu về team data, gồm quản lý và thành viên" 
+             -> Sửa thành: "Giới thiệu chức năng của team data|Ai là quản lý team data?|Ai là thành viên team data?"
+           - Ví dụ 2: "Chính sách nghỉ phép và WFH" 
+             -> Sửa thành: "Chính sách nghỉ phép như thế nào?|Chính sách WFH như thế nào?"
+        4. NẾU câu hỏi chỉ có 1 ý, hãy giữ nguyên ý chính.
 
-        Chỉ cung cấp kết quả **theo định dạng sau** và không thêm bất kỳ văn bản, giải thích hoặc bình luận nào khác:
-        Kết quả: <nội dung chính của câu hỏi 1>|<nội dung chính của câu hỏi 2>...
+        Chỉ trả về kết quả theo định dạng sau, không giải thích gì thêm:
+        Kết quả: <câu hỏi đã làm rõ 1>|<câu hỏi đã làm rõ 2>
 
-        Lịch sử: {history}
-        Câu hỏi gốc: {query}
+        Lịch sử trò chuyện gần đây: 
+        {history}
+        
+        Câu hỏi gốc của người dùng: 
+        {query}
         """)
 
         self.model = ChatGoogleGenerativeAI(model=model, temperature=temperature, api_key=GOOGLE_API_KEY)
         self.parser = StrOutputParser()
 
     def transform(self, raw_query, history):
-        # print ("HISTORY: ", history, '\n________________________________________--')
         prompt = self.transform_prompt.format_prompt(query=raw_query, history=history)
         response = self.parser.parse(self.model.invoke(prompt).content)
+        
         lines = response.split("\n")
         result = lines[0].replace("Kết quả:", "").strip()
+        
         return result.split("|") if result else [raw_query]

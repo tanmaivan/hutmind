@@ -8,7 +8,7 @@ langchain-qdrant
 fastembed
 langchain-google-genai
 semantic-router
-neo4j
 roman
 fastapi
 uvicorn
+langchain-huggingface

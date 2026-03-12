@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from "react";
-import { FaUser, FaRobot, FaPaperPlane, FaCircle, FaCommentDots } from "react-icons/fa";
+import { FaUser, FaRobot, FaPaperPlane, FaCircle, FaPlus, FaPizzaSlice } from "react-icons/fa";
+import ReactMarkdown from "react-markdown";
 import "./ChatBot.css";
 
 const ChatBot = () => {
@@ -7,27 +8,38 @@ const ChatBot = () => {
   const [userInput, setUserInput] = useState("");
   const [isLoading, setIsLoading] = useState(false);
   const chatWindowRef = useRef(null);
+  const textareaRef = useRef(null);
 
-  // Tự động cuộn xuống dưới cùng khi có tin nhắn mới
+  // Auto scroll
   useEffect(() => {
     if (chatWindowRef.current) {
       chatWindowRef.current.scrollTop = chatWindowRef.current.scrollHeight;
     }
   }, [messages]);
 
-  // Xử lý gửi tin nhắn
-  const handleSend = async () => {
-    if (userInput.trim() === "" || isLoading) return; // Ngăn chặn gửi tin nhắn nếu đang tải
+  // Adjust textarea height automatically
+  useEffect(() => {
+    if (textareaRef.current) {
+      textareaRef.current.style.height = 'auto';
+      textareaRef.current.style.height = `${Math.min(textareaRef.current.scrollHeight, 200)}px`;
+    }
+  }, [userInput]);
 
-    // Thêm tin nhắn của người dùng và một dấu ba chấm của bot
+  const handleSend = async () => {
+    if (userInput.trim() === "" || isLoading) return; 
+
     setMessages((prevMessages) => [
       ...prevMessages,
       { sender: "user", text: userInput },
-      { sender: "bot", text: "..." }, // Chỉ thêm một dấu ba chấm
+      { sender: "bot", text: "..." }, 
     ]);
 
     setUserInput("");
     setIsLoading(true);
+
+    if (textareaRef.current) {
+      textareaRef.current.style.height = 'auto';
+    }
 
     try {
       const response = await fetch("http://127.0.0.1:8000/process_query_stream/", {
@@ -45,25 +57,22 @@ const ChatBot = () => {
       const reader = response.body.getReader();
       const decoder = new TextDecoder();
       let botResponse = "";
-      let isFirstChunk = true; // Biến để kiểm tra chunk đầu tiên
+      let isFirstChunk = true; 
 
       while (true) {
         const { done, value } = await reader.read();
         if (done) break;
 
-        // Giải mã và cập nhật câu trả lời từng phần
         const chunk = decoder.decode(value);
         botResponse += chunk;
 
-        // Nếu là chunk đầu tiên, thay thế dấu ba chấm bằng chunk đầu tiên
         if (isFirstChunk) {
           setMessages((prevMessages) => [
-            ...prevMessages.filter((msg) => msg.text !== "..."), // Xóa dấu ba chấm
-            { sender: "bot", text: botResponse }, // Thêm chunk đầu tiên
+            ...prevMessages.filter((msg) => msg.text !== "..."), 
+            { sender: "bot", text: botResponse }, 
           ]);
-          isFirstChunk = false; // Đánh dấu đã xử lý chunk đầu tiên
+          isFirstChunk = false; 
         } else {
-          // Cập nhật tin nhắn cuối cùng của bot với chunk tiếp theo
           setMessages((prevMessages) => {
             const newMessages = [...prevMessages];
             const lastMessageIndex = newMessages.length - 1;
@@ -77,17 +86,17 @@ const ChatBot = () => {
     } catch (error) {
       console.error("Lỗi:", error);
       setMessages((prevMessages) => [
-        ...prevMessages.filter((msg) => msg.text !== "..."), // Xóa dấu ba chấm
-        { sender: "bot", text: "Đã xảy ra lỗi khi kết nối với chatbot." }, // Thêm thông báo lỗi
+        ...prevMessages.filter((msg) => msg.text !== "..."),
+        { sender: "bot", text: "Đã xảy ra lỗi khi kết nối với chatbot. Vui lòng thử lại sau." }, 
       ]);
     } finally {
       setIsLoading(false);
     }
   };
 
-  // Xử lý bắt đầu cuộc trò chuyện mới
   const handleNewChat = async () => {
-    setMessages([]); // Reset messages về mảng rỗng
+    setMessages([]); 
+    setIsLoading(false); // Reset loading state
     try {
       const response = await fetch("http://127.0.0.1:8000/newchat/", {
         method: "GET",
@@ -98,126 +107,111 @@ const ChatBot = () => {
       }
 
       const data = await response.json();
-      console.log(data.message); // Chỉ log ra console, không thêm vào tin nhắn
+      console.log(data.message); 
     } catch (error) {
       console.error("Lỗi:", error);
     }
   };
 
-  // Định dạng câu trả lời của bot (in đậm các phần quan trọng)
-  const formatBotResponse = (text) => {
-    return text.split("\\n").map((line, index) => (
-      <p key={index}>
-        {line.split("**").map((part, i) => {
-          if (i % 2 === 1) {
-            return (
-              <span key={i} style={{ fontWeight: "bold" }}>
-                {part}
-              </span>
-            );
-          }
-          return <span key={i}>{part}</span>;
-        })}
-      </p>
-    ));
-  };
-  // const formatBotResponse = (text) => {
-  //   return text.split("\n").map((line, index) => (
-  //     <p key={index} style={{ whiteSpace: "pre-wrap", margin: "0 0 1em 0" }}>
-  //       {line.split("**").map((part, i) => {
-  //         if (i % 2 === 1) {
-  //           return (
-  //             <span key={i} style={{ fontWeight: "bold" }}>
-  //               {part}
-  //             </span>
-  //           );
-  //         }
-  //         return <span key={i}>{part}</span>;
-  //       })}
-  //     </p>
-  //   ));
-  // };
-
   return (
     <div className="chatbot-container">
       <div className="chat-header">
-        <FaRobot size={30} style={{ marginRight: "10px" }} /> {/* Thêm icon chatbot */}
-        <h1>CHATBOT HỎI ĐÁP VỀ LUẬT HÔN NHÂN VÀ GIA ĐÌNH VIỆT NAM</h1>
-        <button className="new-chat-btn" onClick={handleNewChat} title="Bắt đầu cuộc trò chuyện mới">
-          <FaCommentDots size={24} color="white" />
+        <div className="header-logo" onClick={handleNewChat} title="Quay về trang chủ">
+          <img src="/pizzahut.png" alt="Pizza Hut Logo" width={50} height={50} />
+          <div className="header-title">
+            <h1>HutMind - JRG Chatbot</h1>
+            <span>Powered by Tan Mai</span>
+          </div>
+        </div>
+        <button className="new-chat-btn" onClick={handleNewChat} title="Cuộc trò chuyện mới">
+          <FaPlus size={16} />
+          <span>New Chat</span>
         </button>
       </div>
 
       <div className="chat-window" ref={chatWindowRef}>
         {messages.length === 0 && (
           <div className="welcome-container">
-            <div className="welcome-message">
-              <h1>
-                <FaRobot size={30} style={{ marginRight: "10px" }} />
-                XIN CHÀO!
-              </h1>
-              Bạn có câu hỏi nào cần tôi hỗ trợ không?
+            <div className="welcome-logo">
+              <img src="/mascot.png" alt="Pizza Hut Mascot" width={200} height={250} />
+            </div>
+            <h2>Làm sao tôi có thể giúp bạn hôm nay?</h2>
+            <p className="welcome-subtitle">
+              Hãy hỏi tôi về chính sách JRG, thông tin hệ thống Pizza Hut VN hoặc về Data Team.
+            </p>
+            <div className="suggestion-chips">
+              <button onClick={() => setUserInput("Giới thiệu về team data, ban quản lý là ai?")}>
+                Giới thiệu Team Data
+              </button>
+              
+              <button onClick={() => setUserInput("Kể cho tôi nghe lịch sử hình thành của Pizza Hut!")}>
+                Lịch sử Pizza Hut
+              </button>
+              
+              <button onClick={() => setUserInput("Team Data có ai làm việc ở nước ngoài không?")}>
+                Team Data nước ngoài
+              </button>
+              
+              <button onClick={() => setUserInput("Tập đoàn JRG đang quản lý thương hiệu Pizza Hut ở những nước nào?")}>
+                Quy mô JRG toàn cầu
+              </button>
             </div>
           </div>
         )}
-        {messages.map((message, index) => (
-          <div
-            key={index}
-            className={`message-container ${message.sender === "user" ? "user" : "bot"}`}
-          >
-            {message.sender === "user" && (
-              <div className="icon-container user-icon">
-                <FaUser />
-              </div>
-            )}
+
+        <div className="messages-list">
+          {messages.map((message, index) => (
             <div
-              className={`message ${message.sender} ${message.text === "..." ? "typing" : ""}`}
-              style={{ whiteSpace: "pre-wrap" }} // Thêm style này để giữ nguyên xuống dòng
+              key={index}
+              className={`message-row ${message.sender}`}
             >
-              {message.sender === "bot" && message.text === "..." ? (
-                <div className="typing-indicator">
-                  <FaCircle className="dot dot1" />
-                  <FaCircle className="dot dot2" />
-                  <FaCircle className="dot dot3" />
-                </div>
-              ) : message.sender === "bot" ? (
-                formatBotResponse(message.text)
-              ) : (
-                <p style={{ whiteSpace: "pre-wrap" }}>{message.text}</p> // Thêm style này cho tin nhắn người dùng
-              )}
-            </div>
-            {message.sender === "bot" && (
-              <div className="icon-container bot-icon">
-                <FaRobot />
+              <div className="message-content">
+                {message.sender === "bot" && message.text === "..." ? (
+                  <div className="typing-indicator">
+                    <FaCircle className="dot dot1" />
+                    <FaCircle className="dot dot2" />
+                    <FaCircle className="dot dot3" />
+                  </div>
+                ) : message.sender === "bot" ? (
+                  <div className="markdown-body">
+                    <ReactMarkdown>{message.text}</ReactMarkdown>
+                  </div>
+                ) : (
+                  <div className="user-text">{message.text}</div>
+                )}
               </div>
-            )}
-          </div>
-        ))}
+            </div>
+          ))}
+        </div>
       </div>
 
-      <div className="input-container">
-        <div className="input-wrapper">
+      <div className="input-area">
+        <div className="input-container">
           <textarea
+            ref={textareaRef}
             value={userInput}
             onChange={(e) => setUserInput(e.target.value)}
-            placeholder="Nhập câu hỏi..."
+            placeholder="Gửi tin nhắn cho Data Assistant..."
             rows={1}
             onKeyDown={(e) => {
-              if (e.key === "Enter" && !e.shiftKey && !isLoading) {
-                e.preventDefault(); // Ngăn việc xuống dòng khi nhấn Enter thông thường
+              if (e.key === "Enter" && !e.shiftKey) {
+                e.preventDefault();
                 handleSend();
               }
             }}
             className="chat-input"
-          ></textarea>
+          />
           <button
             onClick={handleSend}
-            disabled={userInput.trim() === "" || isLoading} // Vô hiệu hóa nút gửi khi đang tải
+            disabled={userInput.trim() === "" || isLoading}
             className={`send-button ${userInput.trim() === "" || isLoading ? "disabled" : ""}`}
             title="Gửi"
           >
-            <FaPaperPlane size={20} color="white" />
+            <FaPaperPlane size={16} />
           </button>
+        </div>
+        <div className="footer-text">
+          Pizza Hut Assistant có thể mắc lỗi. Vui lòng kiểm tra lại các thông tin quan trọng.
         </div>
       </div>
     </div>

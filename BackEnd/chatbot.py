@@ -1,102 +1,107 @@
-from langchain.chains import LLMChain
-from langchain.prompts import PromptTemplate
+from langchain_core.prompts import PromptTemplate
 from langchain_google_genai import ChatGoogleGenerativeAI
-from langchain_community.embeddings import HuggingFaceEmbeddings
+from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_qdrant import FastEmbedSparse
+from langchain_classic.memory import ConversationBufferWindowMemory
+from langchain_core.runnables import RunnableSequence
+
 from query_transformation import QueryTransformer
-from route import Router
 from retrieval import Retriever
-from langchain.chains import LLMChain
-from langchain.prompts import PromptTemplate
-from langchain.memory import ConversationBufferWindowMemory
-import time
 from config import GOOGLE_API_KEY
 
 class ChatBot:
     def __init__(self, embedding_model='bkai-foundation-models/vietnamese-bi-encoder', sparse_embedding="Qdrant/BM25"):
+        print("Initializing Embedding Models...")
         self.embedding_model = HuggingFaceEmbeddings(model_name=embedding_model)
         self.sparse_embedding = FastEmbedSparse(model_name=sparse_embedding)
 
-        print ("Khởi tạo Query Transformer")
+        print("Initializing Query Transformer...")
         self.query_transform = QueryTransformer()
 
-        print ("Khởi tạo Router")
-        self.router = Router()
-
-        print ("Khởi tạo Retriever")
+        print("Initializing Retriever (with PhoRanker)...")
         self.retriever = Retriever(self.embedding_model, self.sparse_embedding)
 
-        print ("Khởi tạo LLM")
-        self.llm = ChatGoogleGenerativeAI(api_key=GOOGLE_API_KEY, model="gemini-1.5-flash")
+        print("Initializing LLM...")
+        # Enable native streaming in the LLM config
+        self.llm = ChatGoogleGenerativeAI(
+            api_key=GOOGLE_API_KEY, 
+            model="gemini-2.5-flash", 
+            streaming=True,
+            temperature=0.2
+        )
 
-        # Sử dụng ConversationBufferMemory để lưu trữ lịch sử hội thoại
+        # Memory buffer to keep track of last 3 interactions
         self.memory = ConversationBufferWindowMemory(
-                            memory_key="history",
-                            input_key="query",
-                            return_messages=False,
-                            ai_prefix="AI",
-                            human_prefix="User",
-                            k=2  # Giới hạn số lượng tin nhắn
-                        )
+            memory_key="history",
+            input_key="query",
+            return_messages=False,
+            ai_prefix="AI",
+            human_prefix="User",
+            k=3  
+        )
 
+        # Prompt template designed specifically for Pizza Hut / JRG Context
         self.prompt_template = """
-        Bạn là một chatbot chuyên về Luật Hôn Nhân và Gia Đình Việt Nam với tên "ChatBot hỏi đáp về Luật Hôn Nhân và Gia Đình Việt Nam". Hãy trả lời từng câu hỏi đã được làm rõ (converted_query) dựa trên loại câu hỏi (question_type) và ngữ cảnh (context). Tuân thủ các quy tắc sau:
+        Bạn là "JRG Assistant", một trợ lý AI nội bộ chuyên nghiệp, thân thiện của Jardine Restaurant Group (JRG) - cụ thể là hỗ trợ cho Pizza Hut Việt Nam và Data Team.
+        
+        Nhiệm vụ của bạn là trả lời câu hỏi của người dùng dựa trên NGỮ CẢNH (Context) được cung cấp dưới đây.
 
-        - Với `question_type = 1|4|6|8|9`:
-            1. Dựa vào ngữ cảnh và câu hỏi đã được làm rõ (converted_query) để trả lời câu hỏi gốc (query). Nếu không có thông tin phù hợp trong ngữ cảnh, trả về "Điều bạn hỏi không nằm trong bộ Luật".
-            2. **Chỉ sử dụng thông tin trong ngữ cảnh.** Trả lời một cách **diễn giải chi tiết**, giải thích rõ lý do, cơ sở pháp lý (trong ngữ cảnh, **chỉ ra các điều khoản liên quan nếu có**).
-            3. Nếu hỏi về nội dung của Chương/Mục/Điều/Khoản cụ thể thì trả về thông tin y ngữ cảnh, không thêm bớt bất kì thông tin nào.
+        Quy tắc trả lời:
+        1. NẾU NGỮ CẢNH CÓ THÔNG TIN: Hãy trả lời chi tiết, chính xác dựa trên ngữ cảnh. 
+        2. CHỈ TRÍCH DẪN NGUỒN NẾU CẦN THIẾT: Nếu thông tin lấy từ tài liệu nào, có thể nhắc nhẹ nhàng (VD: "Theo Sổ tay nhân sự 2024...").
+        3. NẾU LÀ CÂU HỎI GIAO TIẾP THÔNG THƯỜNG (Smalltalk như Xin chào, Cảm ơn, Bạn khỏe không...): Hãy trả lời thân thiện, lịch sự với tư cách là trợ lý JRG mà không cần dùng ngữ cảnh.
+        4. NẾU NGỮ CẢNH KHÔNG CHỨA CÂU TRẢ LỜI: Hãy thẳng thắn nói "Xin lỗi, hiện tại tôi chưa có thông tin về vấn đề này trong hệ thống dữ liệu của JRG." KHÔNG tự bịa ra thông tin.
+        5. KHÔNG BAO GIỜ nói các câu như: "Dựa vào ngữ cảnh được cung cấp..." hay "Theo văn bản trên...". Hãy nói chuyện tự nhiên.
 
-        - Với `question_type = 2` (smalltalk): Trả lời thân thiện, phù hợp với ngữ cảnh.
+        Ngữ cảnh truy xuất từ hệ thống:
+        {context}
 
-        - Với `question_type = 0|3|5|7`: *Trả về ngữ cảnh y như nó được cung cấp, không thêm bớt bất kỳ thông tin nào khác.*
+        Lịch sử trò chuyện gần đây:
+        {history}
 
-        Mỗi câu hỏi đã được làm rõ (converted_query[i]) tương ứng với `context[i]` và `question_type[i]`. Trả lời lần lượt từng câu hỏi theo các quy tắc trên. **KHÔNG ĐƯỢC sử dụng các cụm từ tương tự như "Dựa vào thông tin được cung cấp", "Dựa vào ngữ cảnh", "không được nêu rõ trong ngữ cảnh", "trong văn bản được cung cấp".**
-
-        **Cách trình bày câu trả lời:** Tách các thông tin trả lời một cách rõ ràng, in đậm một số từ quan trọng, không nhắc lại câu hỏi.
-
-        Dữ liệu cung cấp:
-        - Loại câu hỏi: {question_type}
-        - Ngữ cảnh: {context}
-        - Câu hỏi gốc: {query}
-        - Câu hỏi đã được làm rõ: {converted_query}
-
+        Câu hỏi của người dùng: 
+        {query}
+        
+        Trả lời:
         """
 
-        # Prompt template cho LLMChain
         self.prompt = PromptTemplate(
-            input_variables=["question_type", "context", "query", "converted_query"],
+            input_variables=["context", "history", "query"],
             template=self.prompt_template,
         )
 
-        # LLMChain kết hợp LLM và Prompt
-        self.chain = LLMChain(llm=self.llm, prompt=self.prompt, memory=self.memory)
+        # Using modern Langchain Expression Language (LCEL) chain
+        self.chain = self.prompt | self.llm
 
     def process_query_stream(self, raw_query):
-        print ('QUERY GỐC: ', raw_query, '\n---------------------------------------------------------')
-        # Bước 1: Biến đổi câu truy vấn dựa trên lịch sử
-        converted_queries = self.query_transform.transform(raw_query, self.memory.load_memory_variables({})["history"])
-        print ('QUERY ĐÃ TRANSFORM: ', converted_queries, '\n---------------------------------------------------------')
-        query_types = []
-        # Bước 2: Phân loại loại câu hỏi
-        for q in converted_queries:
-            query_types.append(self.router.route_query(q))
-        print ('LOẠI CỦA QUERY: ', query_types, '\n---------------------------------------------------------')
-        # Bước 3: Truy vấn thông tin ngữ cảnh
-        context = self.retriever.retrieve(converted_queries, query_types)
-        print ('CONTEXT: ', context, '\n---------------------------------------------------------')
-        # Bước 4: Tạo câu trả lời bằng LangChain
-        response = self.chain.run(question_type=query_types, context=context, query=raw_query, converted_query=converted_queries)
-        print ('CÂU TRẢ LỜI: ', response, '\n___________________________________________________________')
+        print('\n--- NEW REQUEST ---')
+        print(f'RAW QUERY: {raw_query}')
         
-        formatted_response = response.strip().replace("\n", "\\n")  # Đảm bảo xuống dòng được giữ nguyên
-        formatted_response = formatted_response.replace("**", "**")  # Giữ nguyên định dạng in đậm
+        # Step 1: Extract history from memory
+        history = self.memory.load_memory_variables({})["history"]
         
-        for chunk in formatted_response.split():  # Tách câu trả lời thành các từ hoặc cụm từ
-            yield chunk + " "  # Trả về từng phần với khoảng trắng
-            time.sleep(0.05)  # Thêm độ trễ để mô phỏng quá trình streaming
+        # Step 2: Transform query (Handle pronouns, spelling, splitting)
+        converted_queries = self.query_transform.transform(raw_query, history)
+        print(f'TRANSFORMED QUERIES: {converted_queries}')
+        
+        # Step 3: Retrieve context from Qdrant
+        context = self.retriever.retrieve(converted_queries)
+        print(f'CONTEXT RETRIEVED:\n{context}')
+        
+        # Step 4: Generate response and yield stream natively
+        print('GENERATING RESPONSE...')
+        full_response = ""
+        
+        # Native streaming from Gemini
+        for chunk in self.chain.stream({
+            "context": context, 
+            "history": history, 
+            "query": raw_query
+        }):
+            content = chunk.content
+            full_response += content
+            yield content 
 
-        # # Trả về từng phần của câu trả lời
-        # for chunk in response.split():  # Tách câu trả lời thành các từ hoặc cụm từ
-        #     yield chunk + " "  # Trả về từng phần với khoảng trắng
-        #     time.sleep(0.05)  # Thêm độ trễ để mô phỏng quá trình streaming
+        # Step 5: Save context to memory after full response is generated
+        self.memory.save_context({"query": raw_query}, {"output": full_response})
+        print('--- REQUEST COMPLETED ---\n')
