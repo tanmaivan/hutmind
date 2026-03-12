@@ -368,6 +368,11 @@
     border-radius: 50%;
   }
 
+  .welcome-container {
+    padding-top: 60px;
+    justify-content: flex-start;
+  }
+
   .welcome-logo img {
     width: 140px;
     height: auto;

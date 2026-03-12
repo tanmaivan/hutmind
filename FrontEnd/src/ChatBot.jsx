@@ -137,7 +137,7 @@ const ChatBot = () => {
             <div className="welcome-logo">
               <img src="/mascot.png" alt="Pizza Hut Mascot" width={200} height={250} />
             </div>
-            <h2>Làm sao tôi có thể giúp bạn hôm nay?</h2>
+            <h2>Tôi có thể giúp gì cho bạn?</h2>
             <p className="welcome-subtitle">
               Hãy hỏi tôi về chính sách JRG, thông tin hệ thống Pizza Hut VN hoặc về Data Team.
             </p>
@@ -193,7 +193,7 @@ const ChatBot = () => {
             ref={textareaRef}
             value={userInput}
             onChange={(e) => setUserInput(e.target.value)}
-            placeholder="Gửi tin nhắn cho Data Assistant..."
+            placeholder="Gửi tin nhắn cho HutMind..."
             rows={1}
             onKeyDown={(e) => {
               if (e.key === "Enter" && !e.shiftKey) {
