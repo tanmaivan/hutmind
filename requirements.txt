@@ -11,4 +11,7 @@ semantic-router
 roman
 fastapi
 uvicorn
+pydantic
+python-dotenv
 langchain-huggingface
+torch --index-url https://download.pytorch.org/whl/cpu
