@@ -3,6 +3,8 @@ import { FaUser, FaRobot, FaPaperPlane, FaCircle, FaPlus, FaPizzaSlice } from "r
 import ReactMarkdown from "react-markdown";
 import "./ChatBot.css";
 
+const BASE_URL = "https://hutmind.onrender.com";
+
 const ChatBot = () => {
   const [messages, setMessages] = useState([]);
   const [userInput, setUserInput] = useState("");
@@ -42,7 +44,7 @@ const ChatBot = () => {
     }
 
     try {
-      const response = await fetch("http://127.0.0.1:8000/process_query_stream/", {
+      const response = await fetch(`${BASE_URL}/process_query_stream/`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -98,7 +100,7 @@ const ChatBot = () => {
     setMessages([]); 
     setIsLoading(false); // Reset loading state
     try {
-      const response = await fetch("http://127.0.0.1:8000/newchat/", {
+      const response = await fetch(`${BASE_URL}/newchat/`, {
         method: "GET",
       });
 
