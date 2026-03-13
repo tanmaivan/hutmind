@@ -3,7 +3,7 @@ import { FaUser, FaRobot, FaPaperPlane, FaCircle, FaPlus, FaPizzaSlice } from "r
 import ReactMarkdown from "react-markdown";
 import "./ChatBot.css";
 
-const BASE_URL = "https://hutmind.onrender.com";
+const BASE_URL = "https://tanmaivan-hutmind.hf.space";
 
 const ChatBot = () => {
   const [messages, setMessages] = useState([]);
