@@ -66,20 +66,28 @@
   display: flex;
   align-items: center;
   gap: 6px;
-  background-color: transparent;
+  background-color: #ffffff;
   border: 1px solid #e5e7eb;
   color: #374151;
   font-size: 13px;
   font-weight: 500;
-  padding: 8px 14px;
-  border-radius: 8px;
+  padding: 10px 20px;
+  border-radius: 24px; /* Pill-shaped */
   cursor: pointer;
-  transition: all 0.2s ease;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
 }
 
 .new-chat-btn:hover {
-  background-color: #f3f4f6;
+  background-color: #ffffff;
   border-color: #d1d5db;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transform: translateY(-1px);
+}
+
+.new-chat-btn:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
 }
 
 /* Chat Window */
