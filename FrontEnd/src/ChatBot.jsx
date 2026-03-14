@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import { FaUser, FaRobot, FaPaperPlane, FaCircle, FaPlus, FaPizzaSlice } from "react-icons/fa";
+import { MdOutlineContentCopy, MdCheck } from "react-icons/md";
 import ReactMarkdown from "react-markdown";
 import "./ChatBot.css";
 
@@ -9,6 +10,7 @@ const ChatBot = () => {
   const [messages, setMessages] = useState([]);
   const [userInput, setUserInput] = useState("");
   const [isLoading, setIsLoading] = useState(false);
+  const [copiedIndex, setCopiedIndex] = useState(null);
   const chatWindowRef = useRef(null);
   const textareaRef = useRef(null);
 
@@ -115,14 +117,20 @@ const ChatBot = () => {
     }
   };
 
+  const copyToClipboard = (text, index) => {
+    navigator.clipboard.writeText(text).then(() => {
+      setCopiedIndex(index);
+      setTimeout(() => setCopiedIndex(null), 2000);
+    });
+  };
+
   return (
     <div className="chatbot-container">
       <div className="chat-header">
         <div className="header-logo" onClick={handleNewChat} title="Quay về trang chủ">
           <img src="/pizzahut.png" alt="Pizza Hut Logo" width={50} height={50} />
           <div className="header-title">
-            <h1>HutMind - JRG Chatbot</h1>
-            <span>Powered by Tan Mai</span>
+            <h1>HutMind</h1>
           </div>
         </div>
         <button className="new-chat-btn" onClick={handleNewChat} title="Cuộc trò chuyện mới">
@@ -162,28 +170,45 @@ const ChatBot = () => {
         )}
 
         <div className="messages-list">
-          {messages.map((message, index) => (
-            <div
-              key={index}
-              className={`message-row ${message.sender}`}
-            >
-              <div className="message-content">
-                {message.sender === "bot" && message.text === "..." ? (
-                  <div className="typing-indicator">
-                    <FaCircle className="dot dot1" />
-                    <FaCircle className="dot dot2" />
-                    <FaCircle className="dot dot3" />
-                  </div>
-                ) : message.sender === "bot" ? (
-                  <div className="markdown-body">
-                    <ReactMarkdown>{message.text}</ReactMarkdown>
-                  </div>
-                ) : (
-                  <div className="user-text">{message.text}</div>
-                )}
+          {messages.map((message, index) => {
+            const lastBotIndex = [...messages].reverse().findIndex(m => m.sender === 'bot');
+            const actualLastBotIndex = lastBotIndex !== -1 ? messages.length - 1 - lastBotIndex : -1;
+            const isLatestBotMessage = index === actualLastBotIndex;
+
+            return (
+              <div
+                key={index}
+                className={`message-row ${message.sender}`}
+              >
+                <div className="message-content">
+                  {message.sender === "bot" && message.text === "..." ? (
+                    <div className="typing-indicator">
+                      <FaCircle className="dot dot1" />
+                      <FaCircle className="dot dot2" />
+                      <FaCircle className="dot dot3" />
+                    </div>
+                  ) : message.sender === "bot" ? (
+                    <div className={`bot-message-wrapper ${isLatestBotMessage ? 'latest' : ''}`}>
+                      <div className="markdown-body">
+                        <ReactMarkdown>{message.text}</ReactMarkdown>
+                      </div>
+                      {message.text !== "..." && (
+                        <button 
+                          className="copy-btn" 
+                          onClick={() => copyToClipboard(message.text, index)}
+                          title="Sao chép"
+                        >
+                          {copiedIndex === index ? <MdCheck size={18} /> : <MdOutlineContentCopy size={18} />}
+                        </button>
+                      )}
+                    </div>
+                  ) : (
+                    <div className="user-text">{message.text}</div>
+                  )}
+                </div>
               </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
       </div>
 
@@ -213,7 +238,7 @@ const ChatBot = () => {
           </button>
         </div>
         <div className="footer-text">
-          Pizza Hut Assistant có thể mắc lỗi. Vui lòng kiểm tra lại các thông tin quan trọng.
+          HutMind có thể mắc lỗi. Vui lòng kiểm tra lại các thông tin quan trọng.
         </div>
       </div>
     </div>

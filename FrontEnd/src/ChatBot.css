@@ -184,7 +184,8 @@
 }
 
 .message-content {
-  max-width: 80%;
+  width: 100%;
+  max-width: 100%;
   overflow-wrap: break-word;
   font-size: 16px;
   line-height: 1.6;
@@ -193,6 +194,7 @@
 .message-row.user .message-content {
   display: flex;
   justify-content: flex-end;
+  max-width: 80%;
 }
 
 .user-text {
@@ -204,9 +206,49 @@
   box-shadow: 0 2px 8px rgba(227, 24, 55, 0.15);
 }
 
+/* Bot message wrapper for copy button positioning */
+.bot-message-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.copy-btn {
+  background-color: transparent;
+  color: #9ca3af; /* Gray icon */
+  margin-top: 12px;
+  margin-left: -8px; /* Alignment with text */
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+  border-radius: 50%; /* Circular */
+  opacity: 0; /* Hidden by default */
+  width: 36px;
+  height: 36px;
+}
+
+/* Always show icon for the latest response */
+.bot-message-wrapper.latest .copy-btn {
+  opacity: 1;
+}
+
+/* Show icon on hover for all responses */
+.bot-message-wrapper:hover .copy-btn {
+  opacity: 1;
+}
+
+.copy-btn:hover {
+  background-color: #f3f4f6; /* Light circular hover */
+  color: #374151; /* Darker on hover */
+}
+
 /* React Markdown Styles */
 .markdown-body {
   color: #374151;
+  width: 100%;
 }
 
 .markdown-body p {
