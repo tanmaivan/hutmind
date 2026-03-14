@@ -1,0 +1,639 @@
+[
+  {
+    "content": "Context: \nContent: VALID FOR: IT Systems – BCP\nDISTRIBUTION: IT Department\nSUBJECT: Disaster Recovery Directive\nDisaster Recovery Directive\nVersion History\nDate Version Author Action Comment\nSept /2017 1.02 To.Huynh Created Initial draft\nAug /2020 1.03 To.Huynh updated Initial draft\nDec /2023 1.03 To.Huynh updated Google GCP\n\n[DRP Technical Table]:\nVALID FOR: | IT Systems – BCP\nDISTRIBUTION: | IT Department\nSUBJECT: | Disaster Recovery Directive\n\n\n[DRP Technical Table]:\nDate | Version | Author | Action | Comment\nSept /2017 | 1.02 | To.Huynh | Created | Initial draft\nAug /2020 | 1.03 | To.Huynh | updated | Initial draft\nDec /2023 | 1.03 | To.Huynh | updated | Google GCP\n\nTABLE OF CONTENTS",
+    "metadata": {
+      "source": "PHV_IT_DRP_2023",
+      "category": "IT_Policy",
+      "hierarchy": "",
+      "page": 2
+    }
+  },
+  {
+    "content": "Context: 3.2.4 Involvement and Responsibilities: See more in Appendix 1 – scenario\nContent: [3.2.4 Involvement and Responsibilities: See more in Appendix 1 – scenario]",
+    "metadata": {
+      "source": "PHV_IT_DRP_2023",
+      "category": "IT_Policy",
+      "hierarchy": "3.2.4 Involvement and Responsibilities: See more in Appendix 1 – scenario",
+      "page": 3
+    }
+  },
+  {
+    "content": "Context: 7. Google GCP system Disaster recovery and BIA (in another document attached) .... 61\nContent: [7. Google GCP system Disaster recovery and BIA (in another document attached) .... 61]",
+    "metadata": {
+      "source": "PHV_IT_DRP_2023",
+      "category": "IT_Policy",
+      "hierarchy": "7. Google GCP system Disaster recovery and BIA (in another document attached) .... 61",
+      "page": 4
+    }
+  },
+  {
+    "content": "Context: 1. INTRODUTION AND DEFINATION\nContent: [1. INTRODUTION AND DEFINATION]",
+    "metadata": {
+      "source": "PHV_IT_DRP_2023",
+      "category": "IT_Policy",
+      "hierarchy": "1. INTRODUTION AND DEFINATION",
+      "page": 4
+    }
+  },
+  {
+    "content": "Context: 1. INTRODUTION AND DEFINATION > 1.1 Introdution\nContent: [1.1 Introdution]\nThis Disaster Recovery Derective describes the strategy and procedures for recovering\nData Center processing of applications should a disaster substantially disrupt\noperations.\nThe plan is organized into two parts: the main body provides a general description of\nthe disaster recovery strategy and program; the appendices provide detailed information\nfor conducting the recovery. The main body is public information and may be freely\ndistributed; the appendices and attachments contain sensitive information that is\nrestricted to the individuals responsible for recovering Data Center operations.\nThe plan is frequently updated to reflect current hardware, software, procedures,\napplications, and staffing. Revisions are distributed to the disaster recovery team\nmembers perform twice a year following the disaster recovery tests.",
+    "metadata": {
+      "source": "PHV_IT_DRP_2023",
+      "category": "IT_Policy",
+      "hierarchy": "1. INTRODUTION AND DEFINATION > 1.1 Introdution",
+      "page": 4
+    }
+  },
+  {
+    "content": "Context: 1. INTRODUTION AND DEFINATION > 1.2 Terms and Definitions\nContent: [1.2 Terms and Definitions]\nSubsequent Chapters contain terms and definitions used in this directive.",
+    "metadata": {
+      "source": "PHV_IT_DRP_2023",
+      "category": "IT_Policy",
+      "hierarchy": "1. INTRODUTION AND DEFINATION > 1.2 Terms and Definitions",
+      "page": 4
+    }
+  },
+  {
+    "content": "Context: 1. INTRODUTION AND DEFINATION > 1.2 Terms and Definitions > 1.2.1 Definition of Disaster Avoidance/Recovery\nContent: [1.2.1 Definition of Disaster Avoidance/Recovery]\nFigure 1 gives an overview of the used definitions of Disaster recovery describing\navoidance and recovery measures in the field of Business respectively IT. As the puzzle\npieces in the figure symbolize, business and IT have to work together, have to join their\nforces to succeed in continuity planning.\nWhile IT is responsible for disaster avoidance, disaster recovery and support of\nbusiness in re-establishing data completeness, business has the responsibility of the\ndata entry and the business continuity processes. Therefore, responsible business\nmanagers of Group companies have to elaborate a continuity plan, have to invoke this\nplan in case of disaster and have the lead in re-establishing data completeness.\nFigure 1: Business / IT continuity, avoidance / recovery\nDefinition of RPO/RTO Objective of transactional system\nTo quantify the performance in the field of disaster avoidance and recovery the following\ndefinitions are used (see Figure 2 and Table 1):\nFigure 2: RPO/RTO objective for SAP/ SUN application\nAbbreviation Description Target of PHV\nRPO Recovery Point Objective: Point in time to where Max. 30 Minutes\nconsistent application data exists\nRTO (Recovery Time Objective): Time to get systems Max. 4 – 8 hours\nrunning with data of the last recovery point\nDCTO (Data Convergence Time Objective): Time to Max. 8 – 24 hours\nrevert to a fully restored system (all data\navailable)\n\n[DRP Technical Table]:\nAbbreviation | Description | Target of PHV\nRPO | Recovery Point Objective: Point in time to where consistent application data exists | Max. 30 Minutes\nRTO | (Recovery Time Objective): Time to get systems running with data of the last recovery point | Max. 4 – 8 hours\nDCTO | (Data Convergence Time Objective): Time to revert to a fully restored system (all data available) | Max. 8 – 24 hours\n\nTable 1: RPO/RTO objectives for PHV application",
+    "metadata": {
+      "source": "PHV_IT_DRP_2023",
+      "category": "IT_Policy",
+      "hierarchy": "1. INTRODUTION AND DEFINATION > 1.2 Terms and Definitions > 1.2.1 Definition of Disaster Avoidance/Recovery",
+      "page": 6
+    }
+  },
+  {
+    "content": "Context: 1. INTRODUTION AND DEFINATION > 1.2 Terms and Definitions > 1.2.2 Definition of Cold Site for RSC\nContent: [1.2.2 Definition of Cold Site for RSC]\nPHV approved as permanance measure that for RSC office has to establish 1 cold\nsite at Truong Dinh Store. A cold site is defined as a disaster recovery solution that\nprovides office space and redundant network connections. All equipment is\npreparation with limited of function to continue operations has to be installed during\nthe disaster.",
+    "metadata": {
+      "source": "PHV_IT_DRP_2023",
+      "category": "IT_Policy",
+      "hierarchy": "1. INTRODUTION AND DEFINATION > 1.2 Terms and Definitions > 1.2.2 Definition of Cold Site for RSC",
+      "page": 6
+    }
+  },
+  {
+    "content": "Context: 1. INTRODUTION AND DEFINATION > 1.2 Terms and Definitions > 1.2.3 Definition of Disaster and Relevant Scenarios\nContent: [1.2.3 Definition of Disaster and Relevant Scenarios]\nPHV defines disaster concerning on the PHV application at RSC which is\ncentralization for all PHV business application as follows five scenarios as driver for\nrequirements and basis for defining actions (see Figure 3).\nA: Networking - Issues with MPLS or leased line connections, internet\nconnection\nB: Server host VMware - Problems with two ESXi servers not functioning properly.\nC: Data Center - Inability to access the office data center.\nD: Core Switch - An error related to the core network switch.\nE: Application - An application error preventing it from starting.\nFigure 3: Identified five scenarios",
+    "metadata": {
+      "source": "PHV_IT_DRP_2023",
+      "category": "IT_Policy",
+      "hierarchy": "1. INTRODUTION AND DEFINATION > 1.2 Terms and Definitions > 1.2.3 Definition of Disaster and Relevant Scenarios",
+      "page": 6
+    }
+  },
+  {
+    "content": "Context: 1. INTRODUTION AND DEFINATION > 1.2 Terms and Definitions > 1.2.4 Definition of the Crisis Phases\nContent: [1.2.4 Definition of the Crisis Phases]\nPHV defines the following three Crisis Phases (see Figure 4).\nNormal Incident Management (normal situation) - Level 1\nNormal incident management which is covered by SLA corresponds with the daily\nbusiness of PHV. Normal operational issues without any business critical impact can\noccur but they can be handled within the business continuity management of the\naffected ITD. No coordinating Crisis Team has to be invoked. After a short interruption,\nbusiness can work normally.\nEmergency – Level 2\nAn incident has occurred with impact on one or several store, one application or several\napplications. The Crisis Team is invoked and can handle the incident/emergency\naccording to the predefined proceeding below the actual scenario. The disaster\nrecovery planning is under control.\nITD is under the Emergency team. Excluding IT manager is team member of Crisis\nteam\nCrisis - Level 3\nThe impact of the incident has reached a level where employees or PHV as company\nare seriously threatened. The whole companies are affected, the services of PHV can\nonly be provided with considerable constraints. The Crisis Team (level 3) is in action.\nFor business critical application, emergency phase starts with interruptions > 8h\nThe Crisis team is define in detail in the PHV BCP Manual guide\nFigure 4: Crisis phases (administrative applications mean: mail, office, etc…)",
+    "metadata": {
+      "source": "PHV_IT_DRP_2023",
+      "category": "IT_Policy",
+      "hierarchy": "1. INTRODUTION AND DEFINATION > 1.2 Terms and Definitions > 1.2.4 Definition of the Crisis Phases",
+      "page": 7
+    }
+  },
+  {
+    "content": "Context: 1. INTRODUTION AND DEFINATION > 1.2 Terms and Definitions > 1.2.5 Definition of Crisis Level and Crisis Teams\nContent: [1.2.5 Definition of Crisis Level and Crisis Teams]\nPHV defines 3 different Crisis Levels (1, 2, 3) with corresponding Crisis Teams (see\nChapter 2.4):\n• Crisis level 1 is active in normal incident management\n• Crisis level 2 is active in the crisis phase “Emergency”\n• Crisis level 3 is active in the crisis phase “Crisis” and following of the PHV\nBCP Manual guide",
+    "metadata": {
+      "source": "PHV_IT_DRP_2023",
+      "category": "IT_Policy",
+      "hierarchy": "1. INTRODUTION AND DEFINATION > 1.2 Terms and Definitions > 1.2.5 Definition of Crisis Level and Crisis Teams",
+      "page": 7
+    }
+  },
+  {
+    "content": "Context: 2. CRISIS ORGANIZATION\nContent: [2. CRISIS ORGANIZATION]",
+    "metadata": {
+      "source": "PHV_IT_DRP_2023",
+      "category": "IT_Policy",
+      "hierarchy": "2. CRISIS ORGANIZATION",
+      "page": 7
+    }
+  },
+  {
+    "content": "Context: 2. CRISIS ORGANIZATION > 2.1 Crisis Chart\nContent: [2.1 Crisis Chart]\nSee Figure 5\nFigure 5: Crisis Chart",
+    "metadata": {
+      "source": "PHV_IT_DRP_2023",
+      "category": "IT_Policy",
+      "hierarchy": "2. CRISIS ORGANIZATION > 2.1 Crisis Chart",
+      "page": 8
+    }
+  },
+  {
+    "content": "Context: 2. CRISIS ORGANIZATION > 2.2 Crisis team Level 1 and Level 2: Contact detail\nContent: [2.2 Crisis team Level 1 and Level 2: Contact detail]\nSee Figure 6\nGROUP LEVEL MEMBER EMAIL ADDRESS PHONE NUMBER\nLEVEL 1 Huỳnh Tuấn Phương itsupport@jrgvn.com 84- 167 389 5405\nLEVEL 1 Nguyễn Trung Hiếu itsupport@jrgvn.com 84- 909 887 145\nLEVEL 1 Lê Xuân Nghĩa itsupport@jrgvn.com 84- 974 948 227\nSUPPORT TEAM LEVEL 1 Nguyễn Văn Chinh chinh.nguyen@jrgvn.com 84- 947 322 325\nLEVEL 1 / 2 Trần Quang Huy huy.tran@jrgvn.com 84- 984 946 988\nLEVEL 1 / 2 Quách Vũ Hải Đăng dang.quach@jrgvn.com 84- 983 116 625\nLEVEL 1 / 2 Lê Bảo An an.le@jrgvn.com 84- 978 815 839\nLEVEL 1 Nguyễn Thị Hoài Phương phuong.nguyen@jrgvn.com 84- 168 657 3781\nAPPLICATION TEAM LEVEL 1 Trương Thanh Nguyên nguyen.truong@jrgvn.com 84- 1638636737\nLEVEL 1 / 2 Hồ Say Vình vinh.ho@jrgvn.com 84- 902 028 982\nLEVEL 2 Huỳnh Ngọc Tố to.huynh@jrgvn.com 84- 943 388 218\nCONTROLLING TEAM\nLEVEL 2 Nguyễn Thanh Nhã nha.nguyen@jrgvn.com 84- 913 731 983\nFigure 6: Crisis team level\nCrisis team Level 3: defination in the BCB manual guide",
+    "metadata": {
+      "source": "PHV_IT_DRP_2023",
+      "category": "IT_Policy",
+      "hierarchy": "2. CRISIS ORGANIZATION > 2.2 Crisis team Level 1 and Level 2: Contact detail",
+      "page": 8
+    }
+  },
+  {
+    "content": "Context: 2. CRISIS ORGANIZATION > 2.3 Alerting / Escalation\nContent: [2.3 Alerting / Escalation]\nIf the problem cannot be solved in crisis level 1 then the problem escalation to\nLevel 2. If the problem cannot be solved in crisis level 2, the head of Crisis Team\nlevel 2 is responsible for the escalation to Crisis Team level 3. For a severe\nproblem it is possible that the head of crisis level 2 immediately escalates to crisis\nlevel 3 before calling in the crisis level 2 organizations. See Figure 7\n\n[DRP Technical Table]:\nGROUP | LEVEL | MEMBER | EMAIL ADDRESS | PHONE NUMBER\nSUPPORT TEAM | LEVEL 1 | Huỳnh Tuấn Phương | itsupport@jrgvn.com | 84- 167 389 5405\nLEVEL 1 | Nguyễn Trung Hiếu | itsupport@jrgvn.com | 84- 909 887 145\nLEVEL 1 | Lê Xuân Nghĩa | itsupport@jrgvn.com | 84- 974 948 227\nLEVEL 1 | Nguyễn Văn Chinh | chinh.nguyen@jrgvn.com | 84- 947 322 325\nLEVEL 1 / 2 | Trần Quang Huy | huy.tran@jrgvn.com | 84- 984 946 988\nLEVEL 1 / 2 | Quách Vũ Hải Đăng | dang.quach@jrgvn.com | 84- 983 116 625\nLEVEL 1 / 2 | Lê Bảo An | an.le@jrgvn.com | 84- 978 815 839\nAPPLICATION TEAM | LEVEL 1 | Nguyễn Thị Hoài Phương | phuong.nguyen@jrgvn.com | 84- 168 657 3781\nLEVEL 1 | Trương Thanh Nguyên | nguyen.truong@jrgvn.com | 84- 1638636737\nLEVEL 1 / 2 | Hồ Say Vình | vinh.ho@jrgvn.com | 84- 902 028 982\nCONTROLLING TEAM | LEVEL 2 | Huỳnh Ngọc Tố | to.huynh@jrgvn.com | 84- 943 388 218\nLEVEL 2 | Nguyễn Thanh Nhã | nha.nguyen@jrgvn.com | 84- 913 731 983\n\nFigure 7: Crisis escalation\nCriteria for activating crisis level 1:\n• Normal incident management which is covered by SLA corresponds with the\ndaily business of PHV. Normal operational issues without any business\ncritical impact can occur but they can be handled within the business\ncontinuity management of the affected ITD. No coordinating Crisis Team has\nto be invoked. After a short interruption, business can work normally\nCriteria for activating crisis level 2:\n• Interruption of business critical applications > time agreed on SLA\n• One or several store, one application or several application are affected by\nthe problem\n• Problem solving is complex because of the involvement of various teams\nfix structure of the organization of crisis level 2 can shorten recovery time\nCriteria for activating crisis level 3:\n• Interruption of business critical applications > 8h or SLA cannot be fulfilled\nanymore\n• Problem has huge impact on business therefore structure with\npermanent members of IT and business is needed to make right decisions\nquickly\n• Problem has big management attention good communication and\nreporting structures are needed",
+    "metadata": {
+      "source": "PHV_IT_DRP_2023",
+      "category": "IT_Policy",
+      "hierarchy": "2. CRISIS ORGANIZATION > 2.3 Alerting / Escalation",
+      "page": 10
+    }
+  },
+  {
+    "content": "Context: 2. CRISIS ORGANIZATION > 2.4 CRISIS HANDLEING PROCEDURES: ROLES AND RESPONSIBILITY\nContent: [2.4 CRISIS HANDLEING PROCEDURES: ROLES AND RESPONSIBILITY]\nNo Function Crisis Level Role",
+    "metadata": {
+      "source": "PHV_IT_DRP_2023",
+      "category": "IT_Policy",
+      "hierarchy": "2. CRISIS ORGANIZATION > 2.4 CRISIS HANDLEING PROCEDURES: ROLES AND RESPONSIBILITY",
+      "page": 10
+    }
+  },
+  {
+    "content": "Context: 1 IT Manager Level 2 2nd Approve resume service of production site\nContent: [1 IT Manager Level 2 2nd Approve resume service of production site]",
+    "metadata": {
+      "source": "PHV_IT_DRP_2023",
+      "category": "IT_Policy",
+      "hierarchy": "1 IT Manager Level 2 2nd Approve resume service of production site",
+      "page": 10
+    }
+  },
+  {
+    "content": "Context: 2 IT Assistant Manager Level 2 2nd Approve resume service of production site in the\nContent: [2 IT Assistant Manager Level 2 2nd Approve resume service of production site in the]\nabsence of IT Manager",
+    "metadata": {
+      "source": "PHV_IT_DRP_2023",
+      "category": "IT_Policy",
+      "hierarchy": "2 IT Assistant Manager Level 2 2nd Approve resume service of production site in the",
+      "page": 10
+    }
+  },
+  {
+    "content": "Context: 3 IT Officers Lead of Level1 1st level support leader team\nContent: [3 IT Officers Lead of Level1 1st level support leader team]\n- IT related error analysis\n- Coordination Power Users\n- Assistance IT Manager\n- Data backup monitoring\n- Coordination of maintenance tasks\n- Problem indication towards IT Manager (regional) or\nsupplier",
+    "metadata": {
+      "source": "PHV_IT_DRP_2023",
+      "category": "IT_Policy",
+      "hierarchy": "3 IT Officers Lead of Level1 1st level support leader team",
+      "page": 10
+    }
+  },
+  {
+    "content": "Context: 4 IT Assistant Team 1st level support\nContent: [4 IT Assistant Team 1st level support]\n- Problem Triage\n- Coordination software program issues\n- Specifies requests / coordinates hotel users\n- Executes tests\n- Helps Stores/RSC users in basic software program\nhandling\n- Error analysis data output\n- Structures problem indication / documentation\n- Announces problems according to checklist\n- Manages system master data, e.g. create/delete POS\narticles\n- Responsible for replacement of consumables supplies\n- Responsible for PC/Screen cleaning",
+    "metadata": {
+      "source": "PHV_IT_DRP_2023",
+      "category": "IT_Policy",
+      "hierarchy": "4 IT Assistant Team 1st level support",
+      "page": 10
+    }
+  },
+  {
+    "content": "Context: 3. CRISIS SCENARIO\nContent: [3. CRISIS SCENARIO]",
+    "metadata": {
+      "source": "PHV_IT_DRP_2023",
+      "category": "IT_Policy",
+      "hierarchy": "3. CRISIS SCENARIO",
+      "page": 10
+    }
+  },
+  {
+    "content": "Context: 3. CRISIS SCENARIO > 3.1 Office cannot accessible - Loss of Data Center / Vital Infrastructure\nContent: [3.1 Office cannot accessible - Loss of Data Center / Vital Infrastructure]\nThe loss of data center or its vital infrastructure is characterized by any of the following\nmisbehaviors within the end-to-end process including IT:\n• Many users are no longer able to use the IT environment and the business\ncritical applications provided by the ITSC (out of service)\n• Many business critical processes and transactions performed by IT-systems\nare stopped and probably lost\n• The entire networking and communication infrastructure of the ITSC or of the\nexternal suppliers fails\n• The computing environment is no longer available\n• Storage of data is no longer secured\n• The ITSC local data backup and restore environment is no longer usable\nAbove-mentioned loss of data center might be caused by:\n• External disaster like fire, thunderstorm, earthquake, flood or other\nhazardous incidents\n• Loss of power (electricity) (provider failure together with UPS running out of\npower)\n\n[DRP Technical Table]:\nNo | Function | Crisis Level | Role\n1 | IT Manager | Level 2 | 2nd Approve resume service of production site\n2 | IT Assistant Manager | Level 2 | 2nd Approve resume service of production site in the absence of IT Manager\n3 | IT Officers | Lead of Level1 | 1st level support leader team - IT related error analysis - Coordination Power Users - Assistance IT Manager - Data backup monitoring - Coordination of maintenance tasks - Problem indication towards IT Manager (regional) or supplier\n4 | IT Assistant Team | 1st level support - Problem Triage - Coordination software program issues - Specifies requests / coordinates hotel users - Executes tests - Helps Stores/RSC users in basic software program handling - Error analysis data output - Structures problem indication / documentation - Announces problems according to checklist - Manages system master data, e.g. create/delete POS articles - Responsible for replacement of consumables supplies - Responsible for PC/Screen cleaning\n\n• Major air conditioning failure\n• Human misbehavior (mistakes on changes, sabotage) including\nunauthorized access to the data center\n• Risks originated by external providers or partners (e.g. HW/SW vendor,\noutsourcing company)\n• Organizational risks\nIn all cases, the consequences will be the interruption of the access to the\nbusiness critical applications, resulting in the discontinuation of business\nprocesses and their transactions in the systems.",
+    "metadata": {
+      "source": "PHV_IT_DRP_2023",
+      "category": "IT_Policy",
+      "hierarchy": "3. CRISIS SCENARIO > 3.1 Office cannot accessible - Loss of Data Center / Vital Infrastructure",
+      "page": 11
+    }
+  },
+  {
+    "content": "Context: 3. CRISIS SCENARIO > 3.1 Office cannot accessible - Loss of Data Center / Vital Infrastructure > 3.1.1 Most Important Avoidance Measures\nContent: [3.1.1 Most Important Avoidance Measures]\nThe generic measures and possibilities to avoid any of the above-mentioned incidents\nconcerning loss of data center or part of its vital infrastructure are:\n• Build data center infrastructure and its operation based on good practice. In\nfuture, Holcim data center standards will be elaborated.\n• Permanently audit and monitor the data center infrastructure in terms of\ngood practice\n• Have all good practice measures for avoidance implemented\n• Preventive maintenance of key equipment in the data center",
+    "metadata": {
+      "source": "PHV_IT_DRP_2023",
+      "category": "IT_Policy",
+      "hierarchy": "3. CRISIS SCENARIO > 3.1 Office cannot accessible - Loss of Data Center / Vital Infrastructure > 3.1.1 Most Important Avoidance Measures",
+      "page": 11
+    }
+  },
+  {
+    "content": "Context: 3. CRISIS SCENARIO > 3.1 Office cannot accessible - Loss of Data Center / Vital Infrastructure > 3.1.2 Most Important Recovery Measures\nContent: [3.1.2 Most Important Recovery Measures]\n• Establish a frame agreement with a backup data center provider, to switch\nover to a second IT environment, based on backup data within DCTO time\nframe (local cold-site, short-term measure)\n• Establish a global frame agreement with a backup data center provider, to\nswitch over to a second IT environment, based on backup data within DCTO\ntime frame (local cold-site, global Holcim contract, mid-term measure)",
+    "metadata": {
+      "source": "PHV_IT_DRP_2023",
+      "category": "IT_Policy",
+      "hierarchy": "3. CRISIS SCENARIO > 3.1 Office cannot accessible - Loss of Data Center / Vital Infrastructure > 3.1.2 Most Important Recovery Measures",
+      "page": 11
+    }
+  },
+  {
+    "content": "Context: 3. CRISIS SCENARIO > 3.1 Office cannot accessible - Loss of Data Center / Vital Infrastructure > 3.1.3 Process Approach to Recover\nContent: [3.1.3 Process Approach to Recover]\nFigure 8 outlines the generic process of recovery after the loss of data center or vital\ninfrastructure.\nFigure 8: Process recovers",
+    "metadata": {
+      "source": "PHV_IT_DRP_2023",
+      "category": "IT_Policy",
+      "hierarchy": "3. CRISIS SCENARIO > 3.1 Office cannot accessible - Loss of Data Center / Vital Infrastructure > 3.1.3 Process Approach to Recover",
+      "page": 13
+    }
+  },
+  {
+    "content": "Context: 3. CRISIS SCENARIO > 3.2 Datacenter MPLS link/ Leased Line Down - Outage of WAN/ Leased line\nContent: [3.2 Datacenter MPLS link/ Leased Line Down - Outage of WAN/ Leased line]\nOutage of WAN is characterized by any of the following misbehaviors within the end-\ntoend connectivity or communication of any user of the PHV company hub to the\nITSC:\n• Loss of connectivity or interruption of one, more or all data links from the\nshared service center to online system (Office 365, Azure..)\n• Technology failure, data link problem or general trouble within the network of\nthe data link (WAN) provider\n• Failover of intended redundancy technology not working\n• Interruption by mis-configuration of malicious change of the environment\n• Problems on the various interfaces between the components of the whole\nend to end connection of the WAN\n• Physical interruption of cables within buildings and/or outside on private and\npublic places\n• Logical interruption of connection within data link components like firewall,\nintrusion detection systems or switches and routers\nAll above-mentioned interruptions might be mainly caused by:\n• External disaster like fire, thunderstorm, earthquake, flood and other\nhazardous incidents\n• Human misbehavior (mistakes on changes, sabotage) including\nunauthorized access to network components\n• Risks originated by the WAN provider or partner\n• Organizational risks\n• Data center risks including loss of power and failure in air conditioning\nIn all cases, the consequence will be the interruption of the data access to the\nbusiness critical applications, due to failure in the connectivity between PHV RSC\nand Store also online system resulting in the discontinuation of business processes\nand their transactions in the systems.",
+    "metadata": {
+      "source": "PHV_IT_DRP_2023",
+      "category": "IT_Policy",
+      "hierarchy": "3. CRISIS SCENARIO > 3.2 Datacenter MPLS link/ Leased Line Down - Outage of WAN/ Leased line",
+      "page": 13
+    }
+  },
+  {
+    "content": "Context: 3. CRISIS SCENARIO > 3.2 Datacenter MPLS link/ Leased Line Down - Outage of WAN/ Leased line > 3.2.1 Most Important Avoidance Measures\nContent: [3.2.1 Most Important Avoidance Measures]\nLiustrates the generic measures and possibilities to avoid any of the above mentioned\nloss in connectivity:\n• Physically separate and redundant WAN-connections from the ITSC to the\nnetwork of the WAN provider by means of:\n- Redundant and separate link infrastructure (cables, trunks, ducts) to\ndifferent PoP (point of presence) of providers network\n- Redundant routing/switching components\n- Connected to redundant LAN backbone infrastructure\n- Redundant firewall and intrusion detection architecture (no single point of\nfailure)\n- Uninterruptible and redundant power supply and fault tolerant air\nconditioning\n• Permanent (7x24) monitoring within the network management systems and\nalerting possibilities (pager, SMS, mobile phone)\n• Review and analysis of the providers network and connectivity infrastructure\n(within the data path in the end-to-end scenario) regarding:\n- Technology (state-of-the-art and life cycle management)\n- Support and maintenance processes (also review event logs from other\ncustomers)\n- Redundancy\n- Availability (failover test)\n- Disaster avoidance and recovery measures\n- Contract, business stability, changes in market positioning\n- Service level, liability and price\nTo avoid possible outages of WAN implement the following avoidance measure\naccording to good practice:\n• Select and change to a “reliable service” provider to get the requirements\nguaranteed\n• Always consider the full end to end connectivity\n• Establish a 2nd vendor sourcing strategy for the WAN using 2 different\nproviders for redundancy and fail over\n• Invest into 3rd option for dialup networking via ISDN and/or satellite network\n• Secure up-to-date spare material (not only routers and switches, but also\ncables, plugs and software)\n• Ensure a good, structured cabling also for retracing in terms of good practice\n• Establish remote support access possibilities",
+    "metadata": {
+      "source": "PHV_IT_DRP_2023",
+      "category": "IT_Policy",
+      "hierarchy": "3. CRISIS SCENARIO > 3.2 Datacenter MPLS link/ Leased Line Down - Outage of WAN/ Leased line > 3.2.1 Most Important Avoidance Measures",
+      "page": 14
+    }
+  },
+  {
+    "content": "Context: 3. CRISIS SCENARIO > 3.2 Datacenter MPLS link/ Leased Line Down - Outage of WAN/ Leased line > 3.2.2 Most Important Recovery Measures\nContent: [3.2.2 Most Important Recovery Measures]\n• Establish a frame agreement with a backup data link provider, if not\nimplementing a fully redundant WAN based on a different (second) WAN\nprovider. Implement backup of VPN Site to Site.\n• Clearly define response, intervention and repair-time with the WAN-provider\nwithin professional SLAs and keep internal resources maintaining the local\npart of WAN in line with those specifications\n• Use alternative dialup connections to temporary re-establish connectivity to\nthe sites (e.g. with lower capacity and therefore limited application access)\n• Perform regularly recovery tests together with the WAN-provider",
+    "metadata": {
+      "source": "PHV_IT_DRP_2023",
+      "category": "IT_Policy",
+      "hierarchy": "3. CRISIS SCENARIO > 3.2 Datacenter MPLS link/ Leased Line Down - Outage of WAN/ Leased line > 3.2.2 Most Important Recovery Measures",
+      "page": 14
+    }
+  },
+  {
+    "content": "Context: 3. CRISIS SCENARIO > 3.2 Datacenter MPLS link/ Leased Line Down - Outage of WAN/ Leased line > 3.2.3 Process Approach to Recover\nContent: [3.2.3 Process Approach to Recover]\nFigure 9 outlines the generic process of recovery after an outage of WAN has occurred.",
+    "metadata": {
+      "source": "PHV_IT_DRP_2023",
+      "category": "IT_Policy",
+      "hierarchy": "3. CRISIS SCENARIO > 3.2 Datacenter MPLS link/ Leased Line Down - Outage of WAN/ Leased line > 3.2.3 Process Approach to Recover",
+      "page": 16
+    }
+  },
+  {
+    "content": "Context: 3. CRISIS SCENARIO > 3.2 Datacenter MPLS link/ Leased Line Down - Outage of WAN/ Leased line > 3.2.4 Involvement and Responsibilities: See more in Appendix 1 – scenario\nContent: [3.2.4 Involvement and Responsibilities: See more in Appendix 1 – scenario]\nMPLS link Down",
+    "metadata": {
+      "source": "PHV_IT_DRP_2023",
+      "category": "IT_Policy",
+      "hierarchy": "3. CRISIS SCENARIO > 3.2 Datacenter MPLS link/ Leased Line Down - Outage of WAN/ Leased line > 3.2.4 Involvement and Responsibilities: See more in Appendix 1 – scenario",
+      "page": 16
+    }
+  },
+  {
+    "content": "Context: 3. CRISIS SCENARIO > 3.3 Core Switch error - Outage of Backbone LAN\nContent: [3.3 Core Switch error - Outage of Backbone LAN]\nOutage of the Backbone-LAN is characterized by any of the following misbehaviors\nwithin the connectivity or data communication of servers within the data center itself:\n• One, several or all Servers are no longer reachable from the outer world\n(external to the data center of the ITSC)\n• One, several or all servers are disconnected from the WAN, the ITSC LAN\n• One, several or all servers are disconnected from each other\n• Monitoring of the systems and applications platform is no longer possible\n• Applications are not reachable\n• Transactions are not processable, if not aborted\n• Data in the various systems might be inconsistent or corrupt\n• Failover of intended redundancy technology is not working\n• Interruption by mis-configuration of malicious change of the environment\nAll above-mentioned interruptions might be mainly caused by (see risk categorization in\nAppendix M) damage to the LAN-BB components by:\n• External disaster like fire, thunderstorm, earthquake, flood and other\nhazardous incidents\n• Human misbehavior (mistakes on changes, sabotage) including\nunauthorized access to network components\n• Risks originated by capacity overload or system failures\n• Organizational risks\nData center risks including loss of power and failure in air conditioning\nThis Scenariro is define with detail in APPENDIX 1 - Core switch: down",
+    "metadata": {
+      "source": "PHV_IT_DRP_2023",
+      "category": "IT_Policy",
+      "hierarchy": "3. CRISIS SCENARIO > 3.3 Core Switch error - Outage of Backbone LAN",
+      "page": 16
+    }
+  },
+  {
+    "content": "Context: 3. CRISIS SCENARIO > 3.4 Outage of Major Application (SAP/SUN/WINHAM/FILES/SAS System)\nContent: [3.4 Outage of Major Application (SAP/SUN/WINHAM/FILES/SAS System)]\nOutage of Major Application is characterized by any of the following misbehaviors within\nthe end-to-end processing of any Major Application user of the PHV:\n• Many users are no longer able to use the application environment and the\nbusiness critical transactions\n• Loss of connectivity or interruption of one, more or all store or with customer\nor external partners\n• Technology failure or general trouble within the application systems\nenvironment\n• Fail over of intended redundancy technology not working\n• Interruption by mis-configuration of malicious change of the environment\n• Problems on the various interfaces between the system components in the\nwhole end to end communication path\n• Logical interruption or malfunction of system or application functions\nAll above-mentioned interruptions might be mainly caused by:\n• External disaster like fire, thunderstorm, earthquake, flood and other\nhazardous incidents\n• Human misbehavior (mistakes on changes, sabotage) including\nunauthorized access to the application systems\n• Organizational risks\n• Data center risks including loss of power and failure in air conditioning\n• Software bug\nIn all cases, the consequence will be the interruption of the access to the\napplication system and its business critical transactions, due to failure in the entire\napplication environment provided by the ITSC, resulting in the discontinuation of\nbusiness processes.\nThis Scenariro is define with detail in APPENDIX 1 – Application Down",
+    "metadata": {
+      "source": "PHV_IT_DRP_2023",
+      "category": "IT_Policy",
+      "hierarchy": "3. CRISIS SCENARIO > 3.4 Outage of Major Application (SAP/SUN/WINHAM/FILES/SAS System)",
+      "page": 17
+    }
+  },
+  {
+    "content": "Context: 4. DRP DRILLS\nContent: [4. DRP DRILLS]",
+    "metadata": {
+      "source": "PHV_IT_DRP_2023",
+      "category": "IT_Policy",
+      "hierarchy": "4. DRP DRILLS",
+      "page": 17
+    }
+  },
+  {
+    "content": "Context: 4. DRP DRILLS > 4.1. DRP Drill Plan\nContent: [4.1. DRP Drill Plan]\nPlanned Drills to be Involved\nScenarios* Drill Co-ordinator\nconducted on departments\nAll departments in",
+    "metadata": {
+      "source": "PHV_IT_DRP_2023",
+      "category": "IT_Policy",
+      "hierarchy": "4. DRP DRILLS > 4.1. DRP Drill Plan",
+      "page": 17
+    }
+  },
+  {
+    "content": "Context: 1. RSC is not accessible Based on BCP Plan Financial Controller\nContent: [1. RSC is not accessible Based on BCP Plan Financial Controller]\nthe RSC",
+    "metadata": {
+      "source": "PHV_IT_DRP_2023",
+      "category": "IT_Policy",
+      "hierarchy": "1. RSC is not accessible Based on BCP Plan Financial Controller",
+      "page": 17
+    }
+  },
+  {
+    "content": "Context: 2. All server at PHV DC IT departments in the\nContent: [2. All server at PHV DC IT departments in the]\nJanuary 2018 All departments\nDown RSC\nAll departments in",
+    "metadata": {
+      "source": "PHV_IT_DRP_2023",
+      "category": "IT_Policy",
+      "hierarchy": "2. All server at PHV DC IT departments in the",
+      "page": 17
+    }
+  },
+  {
+    "content": "Context: 3. One host esxi at DC is\nContent: [3. One host esxi at DC is]\nMay 2018 the RSC and Financial Controller\ndown ( turned on h.a at dc)\nselected stores\nIT departments in the",
+    "metadata": {
+      "source": "PHV_IT_DRP_2023",
+      "category": "IT_Policy",
+      "hierarchy": "3. One host esxi at DC is",
+      "page": 17
+    }
+  },
+  {
+    "content": "Context: 4. Application Error July 2018 All departments\nContent: [4. Application Error July 2018 All departments]\nRSC",
+    "metadata": {
+      "source": "PHV_IT_DRP_2023",
+      "category": "IT_Policy",
+      "hierarchy": "4. Application Error July 2018 All departments",
+      "page": 17
+    }
+  },
+  {
+    "content": "Context: 4. Application Error July 2018 All departments > 4.2. BCP Drills Procedures\nContent: [4.2. BCP Drills Procedures]\nPrior to the drill\na. The CCT is formed and leader appointed\nb. Scenario and timeline for the drill is agreed by the risk management committee or the\nCCT\n\n[DRP Technical Table]:\nScenarios* | Planned Drills to be conducted on | Involved departments | Drill Co-ordinator\n1. RSC is not accessible | Based on BCP Plan | All departments in the RSC | Financial Controller\n2. All server at PHV DC Down | January 2018 | IT departments in the RSC | All departments\n3. One host esxi at DC is down ( turned on h.a at dc) | May 2018 | All departments in the RSC and selected stores | Financial Controller\n4. Application Error | July 2018 | IT departments in the RSC | All departments\n\n\n[DRP Technical Table]:\nPlanned Drills to be\nconducted on\n\n\n[DRP Technical Table]:\nInvolved\ndepartments\n\nc. Communication is made to the involved personnel regarding the time of the drill\nactivation\nd. CCT to ensure that the involved personnel have access to the most updated BCP\nManual and contact list\ne. A team of observers is established to observe and document findings noted during the\ndrill in a drill event log. Depending on the purpose of management, the team of\nobservers can be disclosed to the personnel involved in the drill (for prepared drill) or\nkept confidential (for surprise drill)\nf. On the date when the drill is schedule, the CCT leader initiates the communication via\nthe communication tree to activate the drill\nDuring the drill\na. The drill is activated and the involved personnel follow the procedures stipulated in the\nrespective crisis scenario mentioned in the appendix 1\nb. The CCT to announce the BCP level ( 3 level of the Crisis) to the involved personnel\nc. During the drill, the team of observers to document the findings noted during the drill in a\ndrill event log\nd. The CCT to announce the closure of the drill upon completion\nPost the drill\na. The event log is completed and circulated to the CCT members\nb. A post-drill evaluation meeting is called to address issues noted in the event log, discuss\nand agree on the action plan and expected completion timeline. Learning is\ndocumented for future reference\nAPPENDIX 1:",
+    "metadata": {
+      "source": "PHV_IT_DRP_2023",
+      "category": "IT_Policy",
+      "hierarchy": "4. Application Error July 2018 All departments > 4.2. BCP Drills Procedures",
+      "page": 19
+    }
+  },
+  {
+    "content": "Context: 1. HỆ THỐNG KẾT NỐI MẠNG DC – DR SITE\nContent: [1. HỆ THỐNG KẾT NỐI MẠNG DC – DR SITE]",
+    "metadata": {
+      "source": "PHV_IT_DRP_2023",
+      "category": "IT_Policy",
+      "hierarchy": "1. HỆ THỐNG KẾT NỐI MẠNG DC – DR SITE",
+      "page": 20
+    }
+  },
+  {
+    "content": "Context: 1. HỆ THỐNG KẾT NỐI MẠNG DC – DR SITE > 1.1 Mô hình hệ thống kết nối mạng DC – DR site\nContent: [1.1 Mô hình hệ thống kết nối mạng DC – DR site]\nSơ đồ nguyên lý\nHình 1. Sơ đồ hệ thống kết nối DC –DR\nCác biểu tượng dùng trong thiết kế\nInternet firewall – Sophos UTM firewall\nLayer 2 switch\nInternet router\nRemote Access VPN\nKết nối mạng đang hoạt động\nKết nối mạng không hoạt động\nMicrosoft Azzue Cloud\n\n[DRP Technical Table]:\nInternet firewall – Sophos UTM firewall\nLayer 2 switch\nInternet router\nRemote Access VPN\nKết nối mạng đang hoạt động Kết nối mạng không hoạt động\nMicrosoft Azzue Cloud\n\nVMware ESXi server với các VM ở trạng thái đang làm việc / Active\nVMWare\nV M W are\nVMware ESXi server với các VM ở trạng thái chờ đồng bộ / Standby\nMáy ảo Windows\nHệ thống backup Veam chạy trên máy chủ vật lý\nHệ thống backup Veam chạy trên máy chủ ảo\nHệ thống lưu trữ NAS",
+    "metadata": {
+      "source": "PHV_IT_DRP_2023",
+      "category": "IT_Policy",
+      "hierarchy": "1. HỆ THỐNG KẾT NỐI MẠNG DC – DR SITE > 1.1 Mô hình hệ thống kết nối mạng DC – DR site",
+      "page": 21
+    }
+  },
+  {
+    "content": "Context: 1. HỆ THỐNG KẾT NỐI MẠNG DC – DR SITE > 1.2 Mô tả hoạt động\nContent: [1.2 Mô tả hoạt động]\n- Trong điều kiện làm việc bình thường, hệ thống máy chủ VMware ESX và kết nối\nmạng WAN, Internet tập trung về tại Data Center – Văn Phòng chính Pizza Hut\nViệt Nam.\n- Các cửa hàng kết nối đến tài nguyên mạng đặt tại các server thông qua kết nối\nchính MPLS L3 hoặc kết nối dự phòng IPSec VPN qua Internet router.\n- Người dùng làm việc ở bên ngoài văn phòng kết nối đến DC thông qua Remote\nAcces SSL VPN do Sophos firewall cung cấp.\n- DC luôn có 1 kết nối VPN đến hệ thống Production, UAT đặt tại MS Azzue Cloud.\n- Người dùng PHV (mạng dây và wifi nội bộ) tại DC sử dụng Internet trên đường\nLeased Line (183.91.23.194).\n- Người dùng mạng wifi cho khách tại DC sử dụng Internet trên 1 đường riêng\nFTTH đặt tại modem Vigor 2900 series.\n- Hệ thống trang bị 1 đường MPLS Layer 2 kết nối DC – DR site để phục vụ đồng\nbộ cho hệ thống Veam Backup, VMware ESX. Đường này cũng là đường\nbackup khi đường MPLS Layer3 mất kết nối.\n- Tại mỗi thời điểm chỉ có 1 đường MPLS 3 tại DC hoặc DR site làm việc. Đơn vị\ncung cấp đường truyền cấu hình thiết bị có thể phát hiện đường truyền có sự cố\nvà tự động điểu chỉnh route sang site còn lại. Tương tự cho đường Internet\nLeased Line.\n\n[DRP Technical Table]:\nVMWare | VMware ESXi server với các VM ở trạng thái đang làm việc / Active\nV M W are | VMware ESXi server với các VM ở trạng thái chờ đồng bộ / Standby\nMáy ảo Windows Hệ thống backup Veam chạy trên máy chủ vật lý\nHệ thống backup Veam chạy trên máy chủ ảo\nHệ thống lưu trữ NAS\n",
+    "metadata": {
+      "source": "PHV_IT_DRP_2023",
+      "category": "IT_Policy",
+      "hierarchy": "1. HỆ THỐNG KẾT NỐI MẠNG DC – DR SITE > 1.2 Mô tả hoạt động",
+      "page": 22
+    }
+  },
+  {
+    "content": "Context: 2. Kịch bản 1: Datacenter MPLS link/ Leased Line Down\nContent: [2. Kịch bản 1: Datacenter MPLS link/ Leased Line Down]\n- Khi đường MPLS L3 hoặc đường Internet tại DC bị mất kết nối, hệ thống mạng\ncủa nhà cung cấp tự động phát hiện lỗi và điều chỉnh route sang gateway tại DR\nsite.\no MPLS L3 gateway: 10.11.1.2.\no LL Internet gateway: 183.91.22.126.\n- Tại PHV-DC: cần thông báo với CMC để chuyển kết nối Internet và MPLS L3\nsang PHV-DR.",
+    "metadata": {
+      "source": "PHV_IT_DRP_2023",
+      "category": "IT_Policy",
+      "hierarchy": "2. Kịch bản 1: Datacenter MPLS link/ Leased Line Down",
+      "page": 22
+    }
+  },
+  {
+    "content": "Context: 2. Kịch bản 1: Datacenter MPLS link/ Leased Line Down > 2.1 Sơ đồ hệ thống mạng – Kịch bản 1\nContent: [2.1 Sơ đồ hệ thống mạng – Kịch bản 1]\nHình 2. Sơ đồ kết nối khi MPLS L3 hoặc Internet Leased Line mất kết nối.",
+    "metadata": {
+      "source": "PHV_IT_DRP_2023",
+      "category": "IT_Policy",
+      "hierarchy": "2. Kịch bản 1: Datacenter MPLS link/ Leased Line Down > 2.1 Sơ đồ hệ thống mạng – Kịch bản 1",
+      "page": 22
+    }
+  },
+  {
+    "content": "Context: 2. Kịch bản 1: Datacenter MPLS link/ Leased Line Down > 2.2 Xử lý và vận hành\nContent: [2.2 Xử lý và vận hành]",
+    "metadata": {
+      "source": "PHV_IT_DRP_2023",
+      "category": "IT_Policy",
+      "hierarchy": "2. Kịch bản 1: Datacenter MPLS link/ Leased Line Down > 2.2 Xử lý và vận hành",
+      "page": 22
+    }
+  },
+  {
+    "content": "Context: 2. Kịch bản 1: Datacenter MPLS link/ Leased Line Down > 2.2 Xử lý và vận hành > 2.2.1 Các bước xử lý sự cố\nContent: [2.2.1 Các bước xử lý sự cố]\n- Thông báo CMC chuyển kết nối Internet, MPLS L3 sang PHV-DR (1). Sau khi\nđường truyền được kích hoạt xong thì thực hiện bước thứ 2.\n- Ghi chú:\no Các thay đổi cấu hình firewall tại các bước (3), (4), (5) sau đây mặc định\nlà thực hiện tại văn phòng PHV.\no Trong trường hợp đường MPLS L3 bị mất kết nối có thể thay đổi cấu hình\nfirewall tại văn phòng PHV hoặc qua SSL VPN.\n- Đổi IP cổng E0/0 và E0/4 kết nối giữa Sophos firewal tại PHV-DC(2).\no E0/0: 172.17.0.2/23\no E0/4: 172.18.0.2/23\n- Đổi IP cổng Ethernet0/0 và Ethernet0/4 DR firewall tại PHV-DR\no E0/0:172.17.0.1/23 (3)\no E0/4:172.18.0.1/23 (4)\n- Ngắt kết nối cổng G0/2 internet router – PHV-DR(5)",
+    "metadata": {
+      "source": "PHV_IT_DRP_2023",
+      "category": "IT_Policy",
+      "hierarchy": "2. Kịch bản 1: Datacenter MPLS link/ Leased Line Down > 2.2 Xử lý và vận hành > 2.2.1 Các bước xử lý sự cố",
+      "page": 23
+    }
+  },
+  {
+    "content": "Context: 2. Kịch bản 1: Datacenter MPLS link/ Leased Line Down > 2.2 Xử lý và vận hành > 2.2.2 Thao tác trên thiết bị\nContent: [2.2.2 Thao tác trên thiết bị]\nĐổi IP mạng User, Server trên Sophos Firewall (2)\n- Đăng nhập Sophos firewall: https://172.17.0.1:1947\n- Đổi IP cổng ETH0: từ IP 172.17.0.1 => 172.17.0.2\n- Đổi IP cổng ETH4: từ IP 172.18.0.1 => 172.18.0.2\nCấu hình thiết bị tại DR:\nĐổi IP trên DR Firewall (3)\n- Đăng nhập Sophos firewall tại DR : https://172.17.0.3:1947\n- Đổi IP cổng ETH0: từ IP 172.17.0.3 => 172.17.0.1\n- Đổi IP cổng ETH4: từ IP 172.18.0.3 => 172.18.0.1\nNgắt kết nối Gi0/2 trên Internet Router tại PHV-DR (5)\n- Đăng nhập router:\n- Mở phần mềm Putty\n- Connection type: SSH\n- IP address: 183.91.22.126\n- Click Open\n- Nhập username, password\nPHVDR-RT> enable\nPHVDR-RT#conf t\nPHVDR-RT(config)#interface g0/2\nPHVDR-RT(config-if)#shutdown\nPHVDR-RT(config-if)#end\nPHVDR-RT#write memory",
+    "metadata": {
+      "source": "PHV_IT_DRP_2023",
+      "category": "IT_Policy",
+      "hierarchy": "2. Kịch bản 1: Datacenter MPLS link/ Leased Line Down > 2.2 Xử lý và vận hành > 2.2.2 Thao tác trên thiết bị",
+      "page": 27
+    }
+  },
+  {
+    "content": "Context: 2. Kịch bản 1: Datacenter MPLS link/ Leased Line Down > 2.2 Xử lý và vận hành > 2.2.3 Rollback hệ thống network từ DR sang DC\nContent: [2.2.3 Rollback hệ thống network từ DR sang DC]\n- Ghi chú:\no Truy cập Internet router bằng IP public 183.91.22.126.\no Truy cập DR firewall bằng IP 10.11.1.2 hoặc IP public 183.91.23.194.\n- Mở cổng Gi0/2 Internet router tại PHV-DR (1)\n- Đổi IP cổng ethernet0/0 vàEthernet0/4 DR firewall tại PHV-DR\no E0/0:172.17.0.3/23 (2)\no E0/4:172.18.0.3/23 (3)\n- Đổi IP cổng E0/0 và E0/4 kết nối giữa Sophos firewal tại PHV-DC.\no E0/0: 172.17.0.1/23 (4)\no E0/4: 172.18.0.1/23 (5)\nMở kết nối Gi0/2 trên Internet Router tại PHV-DR (1)\n- Đăng nhập router từ bên ngoài PHV\no Mở phần mềm Putty\no Chọn connection type: SSH\no IP Address: 183.91.22.126\no Click Open\no Nhập Username/Password\no Gõ lệnh Enable\no Sau đó nhập Enable Password\n- Gõ lệnh configure terminal\nPHVDR-RT# configure terminal\nPHVDR-RT(config)#interface g0/2\nPHVDR-RT(config-if)#no shutdown\nPHVDR-RT(config-if)#end\nPHVDR-RT#write memory\nĐổi IP trên DR Firewall (2, 3)\n- Đăng nhập Sophos firewall qua SSL VPN: https://172.17.0.1:1947\n- Đổi IP cổng ETH0:\n- Đổi IP từ 172.17.0.1 => 172.17.0.3\n- Click Save\n- Đổi IP cổng ETH4: làm tương tự cho như cổng ETH0\n- Đổi IP từ 172.18.0.1 => 172.18.0.3\n- Click Save\nĐổi IP mạng User, Server trên DC Sophos Firewall (4, 5)\n- Đăng nhập DC Sophos firewall qua SSL VPN: https://172.17.0.2:1947\n- Đổi IP cổng ETH0:\n- Đổi IP từ 172.17.0.2 => 172.17.0.1\n- Click Save\n- Đổi IP cổng ETH4: làm tương tự cho như cổng ETH0\n- Đổi IP từ 172.18.0.2 => 172.18.0.1\n- Click Save",
+    "metadata": {
+      "source": "PHV_IT_DRP_2023",
+      "category": "IT_Policy",
+      "hierarchy": "2. Kịch bản 1: Datacenter MPLS link/ Leased Line Down > 2.2 Xử lý và vận hành > 2.2.3 Rollback hệ thống network từ DR sang DC",
+      "page": 32
+    }
+  },
+  {
+    "content": "Context: 2. Kịch bản 1: Datacenter MPLS link/ Leased Line Down > 2.2 Xử lý và vận hành > 2.2.4 Vận hành\nContent: [2.2.4 Vận hành]\n- Người dùng tại DC truy cập Internet tại DR site thông qua đường MPLS L2.\n- Người dùng tại DC truy cập vào vùng server tại DC thông qua đường MPLS L2\n- Người dùng tại các cửa hàng truy cập tài nguyên trên server tại DC qua kết nối\nMPLS L3 đến DR site và tiếp tục đi trên đường MPLS L2 để đến được các\nserver.\n- Người dùng tại văn phòng truy cập server tại DC thông qua kết nối Remote\nAccess VPN đến Internet router tại DR site. Sau đó tiếp tục chuyển tiếp truy cập\nđến server qua đường MPLS L2",
+    "metadata": {
+      "source": "PHV_IT_DRP_2023",
+      "category": "IT_Policy",
+      "hierarchy": "2. Kịch bản 1: Datacenter MPLS link/ Leased Line Down > 2.2 Xử lý và vận hành > 2.2.4 Vận hành",
+      "page": 32
+    }
+  },
+  {
+    "content": "Context: 3. Kịch bản 2: Datacenter - 2xESXi down\nContent: [3. Kịch bản 2: Datacenter - 2xESXi down]\n- Cả 2 hệ thống máy chủ ESXi tại DC bị sự cố không hoạt động được.",
+    "metadata": {
+      "source": "PHV_IT_DRP_2023",
+      "category": "IT_Policy",
+      "hierarchy": "3. Kịch bản 2: Datacenter - 2xESXi down",
+      "page": 33
+    }
+  },
+  {
+    "content": "Context: 3. Kịch bản 2: Datacenter - 2xESXi down > 3.1 Sơ đồ hệ thống mạng – Kịch bản 2\nContent: [3.1 Sơ đồ hệ thống mạng – Kịch bản 2]\nHình 3. Sơ đồ hoạt động hệ thống khi ESX lỗi.",
+    "metadata": {
+      "source": "PHV_IT_DRP_2023",
+      "category": "IT_Policy",
+      "hierarchy": "3. Kịch bản 2: Datacenter - 2xESXi down > 3.1 Sơ đồ hệ thống mạng – Kịch bản 2",
+      "page": 33
+    }
+  },
+  {
+    "content": "Context: 3. Kịch bản 2: Datacenter - 2xESXi down > 3.2 Xử lý và vận hành\nContent: [3.2 Xử lý và vận hành]\nCác bước thực hiện trên hệ thống VMware ESXi với Veeam backup and replication\nFailover hệ thống tại DR chạy tạm thay thế DC đang bị sự cố:\nMô tả: Giả lập các VMs không còn sử dụng được tại DC, IT PHV xác định không thể\nphục hồi tại DC. Thực hiện chuyển đổi sang DR để chạy tạm.\nP H V S G\nD\nN\na\nV e e\nn h S\nS ite A\na m -D C\ná c h C ô n g V iê c\nFailo ve r\n➢➢ XK á c đ\niể m\nP H\nịn h đ\ntra d\nS ite B\nV S G N V e e a m -D R\nD a n h S á c h C ô n g V iê\niể m k h ô i p h ụ c đ ể F a ilo v e\nữ liệ u v à c h ạ y th ử n g h iệ m\nc\nr\ntạ i S ite B",
+    "metadata": {
+      "source": "PHV_IT_DRP_2023",
+      "category": "IT_Policy",
+      "hierarchy": "3. Kịch bản 2: Datacenter - 2xESXi down > 3.2 Xử lý và vận hành",
+      "page": 34
+    }
+  },
+  {
+    "content": "Context: 3. Kịch bản 2: Datacenter - 2xESXi down > 3.2 Xử lý và vận hành > 3.2.1 Các bước xử lý sự cố\nContent: [3.2.1 Các bước xử lý sự cố]\nDanh sách Công việc tại PHVSGNVeeam-DR:\nXác định Các máy tại DC đã off\na) Chuyển trạng thái VMs sang Failover:\n• Bước 1: Sử dụng Remote Desktop kết nối vào IP 172.17.0.137 sử dụng\nUsername: phvsgn\\administrator, Password:***\n• Bước 2: Đăng nhập vào Veeam Backup & Replication Console\nMở ứng dụng dưới đây:\n• Bước 3: Chọn Connect kết nối tới database\n• Bước 4: Chuyển trạng thái VMs sang Failover\nTrong Tab Backup & Replication phần Replicas chọn Ready\nClick Chuột phải lên từ VMs, chọn Failover Now…\nChọn VMs và điểm Restore Point gần nhất rồi chọn Next\nNhập Lý do Failover\nChọn Finish để thực hiện việc Failover\nThực hiện tương tự với 11 VMs còn lại\nb) Kiểm tra\nTrong Tab Backup & Replication chọn Ready\nKiểm tra 11 job backup với các thông số như sau:\n• Name: Tương ứng với tên máy Kiểm tra\n• Status: Failover\nc) Kết quả:\n• Thành công: 11 máy Failover tại PHVSGNVeeam-DR đạt kết quả thành công có\nstatus là Failover.\n• Chưa thành công: Một trong số 11 máy backup tại PHVSGNVeeam-DR Failed",
+    "metadata": {
+      "source": "PHV_IT_DRP_2023",
+      "category": "IT_Policy",
+      "hierarchy": "3. Kịch bản 2: Datacenter - 2xESXi down > 3.2 Xử lý và vận hành > 3.2.1 Các bước xử lý sự cố",
+      "page": 37
+    }
+  },
+  {
+    "content": "Context: 3. Kịch bản 2: Datacenter - 2xESXi down > 3.2 Xử lý và vận hành > 3.2.2 Failback hệ thống tại DR trở về DC\nContent: [3.2.2 Failback hệ thống tại DR trở về DC]\nSau khi 2 server ESXi đã xử lý sự cố thành công\nMô tả: Khi xảy ra sự cố, các VM không thể hoạt động được sau khi chạy tạm thời bên\nDR site thì nổ lực phục hồi bên DC site đã thành công, các VM có thể hoặc động được\nnhưng dữ liệu hiện tại đã cũ so với VMs chạy bên B site. Thực hiện việc Failback VMs\ntừ DR site sang DC site và cho chạy thực tại DC site:\nSite A Site B\nFailback\nPHVSGNVeeam-DC PHVSGNVeeam-DR\nDanh sách Công việc Danh sách Công việc\n➢ Xác định điểm khôi phục để Failover\n➢Thiết lập các tham số cho các máy ảo backup ➢ Kiểm tra dữ liệu và chạy thử nghiệm tại Site\n➢Xác minh máy ảo sao lưu thành công A. Nếu dữ liệu ổn định, Commit Failback, Nếu dữ liệu\nkhông ổn định, Undo Failback.\n➢ Xác minh tình trạng công việc sao chép thành\ncông\n➢ Thiết lập các tham số cho đồng bộ hóa dữ\nliệu\na) Danh sách Công việc tại PHVSGNVeeam-DR:\n❖ Kiểm tra 11 VMs đang ở trạng thái Failover:\n• Bước 1: Sử dụng Remote Desktop kết nối vào IP 172.17.0.137 sử dụng\nUsername: phvsgn\\administrator, Password:***\n• Bước 2: Đăng nhập vào Veeam Backup & Replication Console\nMở ứng dụng dưới đây:\n• Bước 3: Chọn Connect kết nối tới database\n• Bước 4: Trong Tab Backup & Replication phần Replicas chọn Ready\nb) Kiểm tra 11 job Failover với các thông số như sau: Name: Tương ứng với\ntên máy Kiểm tra\n• Name: Tương ứng với tên máy Kiểm tra\n• Status: Failover\nc) Kết quả:\n• Thành công: 11 máy Failover tại PHVSGNVeeam-DR đạt kết quả thành công có\nstatus là Failover.\n• Chưa thành công: Một trong số 11 máy backup tại PHVSGNVeeam-DR Failed.\n❖ Thực hiện Failback 11 VMs từ Site B sang Site A:\n• Bước 1: Trong Tab Backup & Replication phần Replicas chọn Ready\nClick chuột phải lên VMs đang có trạng thái là Failover chọn Failback to production…\nChọn VMs tương ứng cần Failback sau đó chọn Next\nChọn Failback to the original VM\nChọn option Power on target VM after restoring\nTiếp theo thực hiện tương tự với 11 VMs còn lại\nd) Kiểm tra:\nTrong Tab Backup & Replication chọn Ready\nKiểm tra 11 job Failback với các thông số như sau:\n• Name: Tương ứng với tên máy Kiểm tra\n• Status: Failback\ne) Kết quả:\n• Đạt: 11 máy Failback tại PHVSGNVeeam-DR đạt kết quả thành công có status\nlà Failback. Tiếp theo chuyển sang bước 6.\n• Không Đạt: Một trong số 11 máy backup tại PHVSGNVeeam-DR không\nFailback được.\n❖ Xác nhận Failback:\nGiải thích: Lúc này VMs bên site A đã chạy lại hoàn toàn. Hành động này xảy ra khi IT\nPHV đã xác mình là dữ liệu của VMs là mới nhất và muốn tiến hành cho chạy thực.\nTiến hành Commit Failback:\n• Bước 1: Trong Tab Backup & Replication phần Replicas chọn Ready\n• Bước 2: Click chuột phải lên VMs đang có trạng thái là Failback chọn Commit\nFailback\nChọn Yes\nLúc này đã thực hiện Failback Thành công! Trạng thái VMs này sẽ chuyển sang\nReplication giống với trường hợp trạng thái như bình thường lúc chưa xảy ra sự cố.\nTiếp tục thực hiện Commit Failback với 11 máy còn lại.\na) Kiểm tra:\nTrong Tab Backup & Replication chọn Ready\nKiểm tra 11 job Failback với các thông số như sau:\n• Name: Tương ứng với tên máy Kiểm tra\n• Status: Ready\nb) Kết quả:\n• Đạt: 11 máy Commit Failback tại PHVSGNVeeam-DR đạt kết quả thành công có\nstatus là Ready.\n• Không Đạt: Một trong số 11 máy backup tại PHVSGNVeeam-DR không Commit\nFailback được.",
+    "metadata": {
+      "source": "PHV_IT_DRP_2023",
+      "category": "IT_Policy",
+      "hierarchy": "3. Kịch bản 2: Datacenter - 2xESXi down > 3.2 Xử lý và vận hành > 3.2.2 Failback hệ thống tại DR trở về DC",
+      "page": 43
+    }
+  },
+  {
+    "content": "Context: 3. Kịch bản 2: Datacenter - 2xESXi down > 3.2 Xử lý và vận hành > 3.2.3 Vận hành\nContent: [3.2.3 Vận hành]\n- Người dùng tại văn phòng PHV và các nhà hàng MPLS truy cập Internet theo\nkịch bản làm việc bình thường tại PHV-DC.\n- Các nhà hàng MPLS, người dùng tại văn phòng PHV truy cập tài nguyên trên\ncác máy chủ đặt tại PHV-DR thông qua đường L2 MPLS.",
+    "metadata": {
+      "source": "PHV_IT_DRP_2023",
+      "category": "IT_Policy",
+      "hierarchy": "3. Kịch bản 2: Datacenter - 2xESXi down > 3.2 Xử lý và vận hành > 3.2.3 Vận hành",
+      "page": 43
+    }
+  },
+  {
+    "content": "Context: 4. Kịch bản 3: Datacenter turned down and DR site active\nContent: [4. Kịch bản 3: Datacenter turned down and DR site active]\n- Cả hệ thống Máy chủ và Mạng tại DC không thể hoạt động do mất điện kéo dài,\nthiên tai, hỏa hạn, …",
+    "metadata": {
+      "source": "PHV_IT_DRP_2023",
+      "category": "IT_Policy",
+      "hierarchy": "4. Kịch bản 3: Datacenter turned down and DR site active",
+      "page": 44
+    }
+  },
+  {
+    "content": "Context: 4. Kịch bản 3: Datacenter turned down and DR site active > 4.1 Sơ đồ hệ thống mạng – Kịch bản 3\nContent: [4.1 Sơ đồ hệ thống mạng – Kịch bản 3]\nHình 4. Sơ đồ hệ thống khi Data Center không thể hoạt động",
+    "metadata": {
+      "source": "PHV_IT_DRP_2023",
+      "category": "IT_Policy",
+      "hierarchy": "4. Kịch bản 3: Datacenter turned down and DR site active > 4.1 Sơ đồ hệ thống mạng – Kịch bản 3",
+      "page": 44
+    }
+  },
+  {
+    "content": "Context: 4. Kịch bản 3: Datacenter turned down and DR site active > 4.2 Xử lý và vận hành\nContent: [4.2 Xử lý và vận hành]",
+    "metadata": {
+      "source": "PHV_IT_DRP_2023",
+      "category": "IT_Policy",
+      "hierarchy": "4. Kịch bản 3: Datacenter turned down and DR site active > 4.2 Xử lý và vận hành",
+      "page": 44
+    }
+  },
+  {
+    "content": "Context: 4. Kịch bản 3: Datacenter turned down and DR site active > 4.2 Xử lý và vận hành > 4.2.1 Các bước xử lý sự cố\nContent: [4.2.1 Các bước xử lý sự cố]\nKích hoạt hệ thống Mạng tại DR Site\n- Thông báo CMC kích hoạt kết nối Internet, MPLS L3 tại PHV-DR(1).\n- Đổi IP cổng ethernet0/0 DR firewall tại PHV-DR: 172.17.0.1/23(2).\n- Đổi IP cổng ethernet0/4 DR firewall tại PHV-DR: 172.18.0.1/23(3).\n- Ngắt kết nối Gi0/2 trên Internet Router tại PHV-DR(4).\n- Kích hoạt hệ thống máy chủ tại PHV-DR(5).\nNote: có thể remote vào hệ thống tại PHV-DR sau khi đường Internet & L3 MPLS phục\nhồi bằng remote VPN hoặc từ 1 nhà hàng MPLS.\nThao tác trên thiết bị\n❖ Đổi IP cổng EHTHERNET 0/0 DR Firewall tại PHV-DR (2)\n- Bước 1: đăng nhập DR firewall\n▪ Từ Intermet http://183.91.23.194/\n▪ Hoặc từ 1 nhà hàng bất kỳ http://10.11.1.2\no Nhập username/password\n- Bước 2: đổi IP cổng ethernet 0/0\nĐăng nhập DR firewall tại DR : https://172.17.0.3:1947\n- Đổi IP cổng ETH0: từ IP 172.17.0.3 => 172.17.0.1\n- Đổi IP cổng ETH4: từ IP 172.18.0.3 => 172.18.0.1 (3)\n❖ Ngắt kết nối Gi0/2 trên Internet Router tại PHV-DR (4)\n- Đăng nhập router:\n- Mở phần mềm Putty\n- Connection type: SSH\n- IP address: 183.91.22.126\n- Click Open\n- Nhập username, password\nPHVDR-RT> enable\nPHVDR-RT#conf t\nPHVDR-RT(config)#interface g0/2\nPHVDR-RT(config-if)#shutdown\nPHVDR-RT(config-if)#end\nPHVDR-RT#write memory\n❖ Kích hoạt hệ thống máy chủ tại PHV-DR(5).\nFailover hệ thống tại DR chạy tạm thay thế DC đang bị sự cố:\nMô tả: Giả lập các VMs không còn sử dụng được tại DC, IT PHV xác định không thể\nphục hồi tại DC. Thực hiện chuyển đổi sang DR để chạy tạm.\nSite A Site B\nFailover\nPHVSGNVeeam-DC PHVSGNVeeam-DR\nDanh Sách Công Viêc Danh Sách Công Viêc\n➢Xác định điểm khôi phục để Failover\n➢Kiểm tra dữ liệu và chạy thử nghiệm tại Site B\nDanh sách Công việc tại PHVSGNVeeam-DR:\nXác định Các máy tại DC đã off\na) Chuyển trạng thái VMs sang Failover:\n• Bước 1: Sử dụng Remote Desktop kết nối vào IP 172.17.0.137 sử dụng\nUsername: phvsgn\\administrator, Password:***\n• Bước 2: Đăng nhập vào Veeam Backup & Replication Console\nMở ứng dụng dưới đây:\n• Bước 3: Chọn Connect kết nối tới database\n• Bước 4: Chuyển trạng thái VMs sang Failover\nTrong Tab Backup & Replication phần Replicas chọn Ready\nClick Chuột phải lên từ VMs, chọn Filover Now…\nChọn VMs và điểm Restore Point gần nhất rồi chọn Next\nNhập Lý do Failover\nChọn Finish để thực hiện việc Failover\nThực hiện tương tự với 11 VMs còn lại\nb) Kiểm tra\nTrong Tab Backup & Replication chọn Ready\nKiểm tra 11 job backup với các thông số như sau:\n• Name: Tương ứng với tên máy Kiểm tra\n• Status: Failover\nc) Kết quả:\n• Thành công: 11 máy Failover tại PHVSGNVeeam-DR đạt kết quả thành công có\nstatus là Failover.\n• Chưa thành công: Một trong số 11 máy backup tại PHVSGNVeeam-DR Failed",
+    "metadata": {
+      "source": "PHV_IT_DRP_2023",
+      "category": "IT_Policy",
+      "hierarchy": "4. Kịch bản 3: Datacenter turned down and DR site active > 4.2 Xử lý và vận hành > 4.2.1 Các bước xử lý sự cố",
+      "page": 50
+    }
+  },
+  {
+    "content": "Context: 4. Kịch bản 3: Datacenter turned down and DR site active > 4.2 Xử lý và vận hành > 4.2.2 Rollback hệ thống network từ DR sang DC\nContent: [4.2.2 Rollback hệ thống network từ DR sang DC]\n- Ghi chú:\no Truy cập Internet router bằng IP public 183.91.22.126.\no Truy cập DR firewall bằng IP 10.11.1.2 hoặc IP public 183.91.23.194.\n- Mở cổng Gi0/2 Internet router tại PHV-DR (1)\n- Đổi IP cổng Ethernet0/0 và Ethernet0/4 DR firewall tại PHV-DR\no E0/0:172.17.0.3/23 (2)\no E0/4:172.18.0.3/23 (3)\nMở kết nối Gi0/2 trên Internet Router tại PHV-DR (1)\n- Đăng nhập router từ bên ngoài PHV\no Mở phần mềm Putty\no Chọn connection type: SSH\no IP Address: 183.91.22.126\no Click Open\no Nhập Username/Password\no Gõ lệnh Enable\no Sau đó nhập Enable Password\n- Gõ lệnh configure terminal\nPHVDR-RT# configure terminal\nPHVDR-RT(config)#interface g0/2\nPHVDR-RT(config-if)#no shutdown\nPHVDR-RT(config-if)#end\nĐổi IP cổng EHTHERNET 0/0 DR Firewall tại PHV-DR (2)\n- Bước 1:đăng nhập DR firewall\no Đăng nhập từ bên ngoài PHV http://183.91.23.194\no Đăng nhập từ 1 nhà hàng MPLS bất kỳ http://10.11.1.2\no Nhập username/password\n- Bước 2 đổi IP cổng ethernet 0/0\nĐăng nhập Sophos firewall qua SSL VPN: https://172.17.0.1:1947\n- Đổi IP cổng ETH0:\n- Đổi IP từ 172.17.0.1 => 172.17.0.3\n- Click Save\nĐổi IP cổng ETH4: làm tương tự cho như cổng ETH0 (3)\n- Đổi IP từ 172.18.0.1 => 172.18.0.3\n- Click Save\nThông báo CMC chuyển đổi kết nối Internet & MPLS L3 về PHV-DC",
+    "metadata": {
+      "source": "PHV_IT_DRP_2023",
+      "category": "IT_Policy",
+      "hierarchy": "4. Kịch bản 3: Datacenter turned down and DR site active > 4.2 Xử lý và vận hành > 4.2.2 Rollback hệ thống network từ DR sang DC",
+      "page": 53
+    }
+  },
+  {
+    "content": "Context: 4. Kịch bản 3: Datacenter turned down and DR site active > 4.2 Xử lý và vận hành > 4.2.3 Failback hệ thống tại DR trở về DC\nContent: [4.2.3 Failback hệ thống tại DR trở về DC]\nSau khi 2 server ESXi đã xử lý sự cố thành công\nMô tả: Khi xảy ra sự cố, các VM không thể hoạt động được sau khi chạy tạm thời bên\nDR site thì nổ lực phục hồi bên DC site đã thành công, các VM có thể hoặc động được\nnhưng dữ liệu hiện tại đã cũ so với VMs chạy bên B site. Thực hiện việc Failback VMs\ntừ DR site sang DC site và cho chạy thực tại DC site:\n➢➢ TX há iế t lậ\nc m in\nP\nph\nH V S G N V e e\nD a n h s\nc á c t h a m s ố\nm á y ả o s a o\nS it e A\na m - D C\ná c h C ô n g\nc h o c á c m\nlư u t h à n h\nv\ná\nc\niệ c\ny ả\nô n\nog b a c k u p\nF a ilb a ck\n➢➢A\n. N\nk h ô\n➢c\nô n\n➢liệ\nu\nến\ng\nS it e B\nP H V S G N V e e a m - D R\nD a n h s á c h C ô n g v iệ c\nX á c đ ịn h đ iể m k h ô i p h ụ c đ ể F a ilo v e r\nK iể m t r a d ữ liệ u v à c h ạ y t h ử n g h iệ m\nu d ữ liệ u ổ n đ ịn h , C o m m it F a ilb a c k , N ế\ng ổ n đ ịn h , U n d o F a ilb a c k .\nX á c m in h t ìn h t r ạ n g c ô n g v iệ c s a o c h\nT h iế t lậ p c á c t h a m s ố c h o đ ồ n g b ộ h\nt ạ i S it e\nu d ữ liệ\né p t h à n\nó a d ữ\nu\nh\na) Danh sách Công việc tại PHVSGNVeeam-DR:\n❖ Kiểm tra 11 VMs đang ở trạng thái Failover:\n• Bước 1: Sử dụng Remote Desktop kết nối vào IP 172.17.0.137 sử dụng\nUsername: phvsgn\\administrator, Password:***\n• Bước 2: Đăng nhập vào Veeam Backup & Replication Console\nMở ứng dụng dưới đây:\n• Bước 3: Chọn Connect kết nối tới database\n• Bước 4: Trong Tab Backup & Replication phần Replicas chọn Ready\nb) Kiểm tra 11 job Failover với các thông số như sau: Name: Tương ứng\nvới tên máy Kiểm tra\n• Name: Tương ứng với tên máy Kiểm tra\n• Status: Failover\nc) Kết quả:\n• Thành công: 11 máy Failover tại PHVSGNVeeam-DR đạt kết quả thành công có\nstatus là Failover.\n• Chưa thành công: Một trong số 11 máy backup tại PHVSGNVeeam-DR Failed.\n❖ Thực hiện Failback 11 VMs từ Site B sang Site A:\n• Bước 1: Trong Tab Backup & Replication phần Replicas chọn Ready\nClick chuột phải lên VMs đang có trạng thái là Failover chọn Failback to production…\nChọn VMs tương ứng cần Failback sau đó chọn Next\nChọn Failback to the original VM\nChọn option Power on target VM after restoring\nTiếp theo thực hiện tương tự với 11 VMs còn lại\nd) Kiểm tra:\nTrong Tab Backup & Replication chọn Ready\nKiểm tra 11 job Failback với các thông số như sau:\n• Name: Tương ứng với tên máy Kiểm tra\n• Status: Failback\ne) Kết quả:\n• Thành công: 11 máy Failback tại PHVSGNVeeam-DR đạt kết quả thành công\ncó status là Failback. Tiếp theo chuyển sang bước 6.\n• Chưa thành công: Một trong số 11 máy backup tại PHVSGNVeeam-DR không\nFailback được.\n❖ Xác nhận Failback:\nGiải thích: Lúc này VMs bên DC site đã chạy lại hoàn toàn. Hành động này xảy ra khi IT\nPHV đã xác mình là dữ liệu của VMs là mới nhất và muốn tiến hành cho chạy thực.\nTiến hành Commit Failback:\n• Bước 1: Trong Tab Backup & Replication phần Replicas chọn Ready\n• Bước 2: Click chuột phải lên VMs đang có trạng thái là Failback chọn Commit\nFailback\nChọn Yes\nLúc này đã thực hiện Failback Thành công! Trạng thái VMs này sẽ chuyển sang\nReplication giống với trường hợp trạng thái như bình thường lúc chưa xảy ra sự cố.\nTiếp tục thực hiện Commit Failback với 11 máy còn lại.\na) Kiểm tra:\nTrong Tab Backup & Replication chọn Ready\nKiểm tra 11 job Failback với các thông số như sau:\n• Name: Tương ứng với tên máy Kiểm tra\n• Status: Ready\nb) Kết quả:\n• Thành công: 11 máy Commit Failback tại PHVSGNVeeam-DR đạt kết quả\nthành công có status là Ready.\n• Chưa thành công: Một trong số 11 máy backup tại PHVSGNVeeam-DR không\nCommit Failback được.",
+    "metadata": {
+      "source": "PHV_IT_DRP_2023",
+      "category": "IT_Policy",
+      "hierarchy": "4. Kịch bản 3: Datacenter turned down and DR site active > 4.2 Xử lý và vận hành > 4.2.3 Failback hệ thống tại DR trở về DC",
+      "page": 59
+    }
+  },
+  {
+    "content": "Context: 4. Kịch bản 3: Datacenter turned down and DR site active > 4.2 Xử lý và vận hành > 4.2.4 Vận hành\nContent: [4.2.4 Vận hành]\n- Người dùng tại DC di chuyển sang các văn phòng, cửa hàng PHV lân cận hoặc\ncó thể sử dụng Remote VPN vào hệ thống tại DR Site.\n- Người dùng tại các của hàng truy cập tài nguyên trên server tại DR Site qua kết\nnối MPLS L3 đến DR site.\n- Người dùng bên ngoài văn phòng truy cập server tại DR Site thông qua kết nối\nRemote Access SSL VPN đến DR firewall tại DR site.",
+    "metadata": {
+      "source": "PHV_IT_DRP_2023",
+      "category": "IT_Policy",
+      "hierarchy": "4. Kịch bản 3: Datacenter turned down and DR site active > 4.2 Xử lý và vận hành > 4.2.4 Vận hành",
+      "page": 59
+    }
+  },
+  {
+    "content": "Context: 5. Kịch bản 4: Core switch down\nContent: [5. Kịch bản 4: Core switch down]\n- Core switch 3850 tại PHV-DC lỗi và không hoạt động được.",
+    "metadata": {
+      "source": "PHV_IT_DRP_2023",
+      "category": "IT_Policy",
+      "hierarchy": "5. Kịch bản 4: Core switch down",
+      "page": 60
+    }
+  },
+  {
+    "content": "Context: 5. Kịch bản 4: Core switch down > 5.1 Sơ đồ hệ thống mạng – Kịch bản 4\nContent: [5.1 Sơ đồ hệ thống mạng – Kịch bản 4]",
+    "metadata": {
+      "source": "PHV_IT_DRP_2023",
+      "category": "IT_Policy",
+      "hierarchy": "5. Kịch bản 4: Core switch down > 5.1 Sơ đồ hệ thống mạng – Kịch bản 4",
+      "page": 60
+    }
+  },
+  {
+    "content": "Context: 5. Kịch bản 4: Core switch down > 5.2 Xử lý sự cố\nContent: [5.2 Xử lý sự cố]\n- Mở nguồn switch Cisco SG500\n- Chuyển kết nối từ switch Cisco 3850 sang Cisco SG500 theo kiểu tịnh tuyến, tức\nlà cáp nối đến cổng 1 của switch Cisco 3850 sẽ chuyển sang cổng 1 switch\nCisco SG500 và làm tương tự cho các cổng còn lại.",
+    "metadata": {
+      "source": "PHV_IT_DRP_2023",
+      "category": "IT_Policy",
+      "hierarchy": "5. Kịch bản 4: Core switch down > 5.2 Xử lý sự cố",
+      "page": 60
+    }
+  },
+  {
+    "content": "Context: 6. Kịch bản 5: Application Down\nContent: [6. Kịch bản 5: Application Down]\nPHV curently using 6 majors Application systems and core networking to running the\nbusiness.\nThe DRP plan for each major Application systems are documented in separate\ndocument.\nSee the figure 9\nNO Application Name Description / Functionlities Document related",
+    "metadata": {
+      "source": "PHV_IT_DRP_2023",
+      "category": "IT_Policy",
+      "hierarchy": "6. Kịch bản 5: Application Down",
+      "page": 61
+    }
+  },
+  {
+    "content": "Context: 1 SUN Accounting system 1. SUN ACCOUNTING _BCP_2017.docx\nContent: [1 SUN Accounting system 1. SUN ACCOUNTING _BCP_2017.docx]\nDatawarehouse/ supply chain\nSAP AND WINHAM 2. SAP AND WINHAM _BCP_2017.docx\n2 system/ Stocktake",
+    "metadata": {
+      "source": "PHV_IT_DRP_2023",
+      "category": "IT_Policy",
+      "hierarchy": "1 SUN Accounting system 1. SUN ACCOUNTING _BCP_2017.docx",
+      "page": 61
+    }
+  },
+  {
+    "content": "Context: 3 CADENA HR system/ payroll 3. CADENA_HRIS_BCP_2017.docx\nContent: [3 CADENA HR system/ payroll 3. CADENA_HRIS_BCP_2017.docx]",
+    "metadata": {
+      "source": "PHV_IT_DRP_2023",
+      "category": "IT_Policy",
+      "hierarchy": "3 CADENA HR system/ payroll 3. CADENA_HRIS_BCP_2017.docx",
+      "page": 61
+    }
+  },
+  {
+    "content": "Context: 4 SAS REPORT Reporting system 4. SAS_SYSTEM_BCP_2017.docx\nContent: [4 SAS REPORT Reporting system 4. SAS_SYSTEM_BCP_2017.docx]\nColtrol data consolidate daily\nPOS HQ 5. POINTSOFT _POS_BCP_2017.docx\n5 for store",
+    "metadata": {
+      "source": "PHV_IT_DRP_2023",
+      "category": "IT_Policy",
+      "hierarchy": "4 SAS REPORT Reporting system 4. SAS_SYSTEM_BCP_2017.docx",
+      "page": 61
+    }
+  },
+  {
+    "content": "Context: 6 FILE SERVER Store user file/ user data 6. FILE SERVER_BCP_14_2017.docx\nContent: [6 FILE SERVER Store user file/ user data 6. FILE SERVER_BCP_14_2017.docx]\nNetwork connection at RSC\nNETWORKING 7. NETWORK_BCP_2017.docx\n7 and Store\nFigure 9",
+    "metadata": {
+      "source": "PHV_IT_DRP_2023",
+      "category": "IT_Policy",
+      "hierarchy": "6 FILE SERVER Store user file/ user data 6. FILE SERVER_BCP_14_2017.docx",
+      "page": 61
+    }
+  },
+  {
+    "content": "Context: 7. Google GCP system Disaster recovery and BIA (in another document\nContent: [7. Google GCP system Disaster recovery and BIA (in another document]\nattached)\n\n[DRP Technical Table]:\nNO | Application Name | Description / Functionlities | Document related\n1 | SUN | Accounting system | 1. SUN ACCOUNTING _BCP_2017.docx\n2 | SAP AND WINHAM | Datawarehouse/ supply chain system/ Stocktake | 2. SAP AND WINHAM _BCP_2017.docx\n3 | CADENA | HR system/ payroll | 3. CADENA_HRIS_BCP_2017.docx\n4 | SAS REPORT | Reporting system | 4. SAS_SYSTEM_BCP_2017.docx\n5 | POS HQ | Coltrol data consolidate daily for store | 5. POINTSOFT _POS_BCP_2017.docx\n6 | FILE SERVER | Store user file/ user data | 6. FILE SERVER_BCP_14_2017.docx\n7 | NETWORKING | Network connection at RSC and Store | 7. NETWORK_BCP_2017.docx\n",
+    "metadata": {
+      "source": "PHV_IT_DRP_2023",
+      "category": "IT_Policy"
+    }
+  }
+]

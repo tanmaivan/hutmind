@@ -1,0 +1,947 @@
+[
+  {
+    "content": "Red Roof (RR) là Mô hình nhà hàng chuyên phục vụ ăn tại chỗ theo kiểu truyền thống. Thuật ngữ này thường được sử dụng trong bộ phận OPERATIONS tại Pizza Hut Vietnam.",
+    "metadata": {
+      "source": "PHVN_HRA_List of Abbreviations and Technical Terms_Nov2021",
+      "category": "Technical_Terms",
+      "department": "OPERATIONS",
+      "term": "Red Roof (RR)"
+    }
+  },
+  {
+    "content": "Restaurant-Based Delivery (RBD) là Mô hình nhà hàng chuyên phục vụ ăn tại chỗ, mua mang về và được hỗ trợ thêm 2-3 xe giao hàng. Thuật ngữ này thường được sử dụng trong bộ phận OPERATIONS tại Pizza Hut Vietnam.",
+    "metadata": {
+      "source": "PHVN_HRA_List of Abbreviations and Technical Terms_Nov2021",
+      "category": "Technical_Terms",
+      "department": "OPERATIONS",
+      "term": "Restaurant-Based Delivery (RBD)"
+    }
+  },
+  {
+    "content": "Delco là Mô hình nhà hàng chuyên phục vụ Mua mang về và giao hàng tận nơi. Thuật ngữ này thường được sử dụng trong bộ phận OPERATIONS tại Pizza Hut Vietnam.",
+    "metadata": {
+      "source": "PHVN_HRA_List of Abbreviations and Technical Terms_Nov2021",
+      "category": "Technical_Terms",
+      "department": "OPERATIONS",
+      "term": "Delco"
+    }
+  },
+  {
+    "content": "Fast Casual Delivery (FCD) là Mô hình nhà hàng chuyên phục vụ Mua mang về và giao hàng tận nơi có thiết kế mới và Open Kitchen. Thuật ngữ này thường được sử dụng trong bộ phận OPERATIONS tại Pizza Hut Vietnam.",
+    "metadata": {
+      "source": "PHVN_HRA_List of Abbreviations and Technical Terms_Nov2021",
+      "category": "Technical_Terms",
+      "department": "OPERATIONS",
+      "term": "Fast Casual Delivery (FCD)"
+    }
+  },
+  {
+    "content": "Small Box (SB) là Mô hình nhà hàng có thiết kế mới với diện tích không lớn, quầy Make và Auxi được kết hợp. Thuật ngữ này thường được sử dụng trong bộ phận OPERATIONS tại Pizza Hut Vietnam.",
+    "metadata": {
+      "source": "PHVN_HRA_List of Abbreviations and Technical Terms_Nov2021",
+      "category": "Technical_Terms",
+      "department": "OPERATIONS",
+      "term": "Small Box (SB)"
+    }
+  },
+  {
+    "content": "Khu vực FOH là Front of House - Khu vực phía trước của nhà hàng gồm có khu vực khách hàng và phục vụ. Thuật ngữ này thường được sử dụng trong bộ phận OPERATIONS tại Pizza Hut Vietnam.",
+    "metadata": {
+      "source": "PHVN_HRA_List of Abbreviations and Technical Terms_Nov2021",
+      "category": "Technical_Terms",
+      "department": "OPERATIONS",
+      "term": "Khu vực FOH"
+    }
+  },
+  {
+    "content": "Khu vực BOH là Back of House - Khu vực phía sau quầy bán hàng nơi diễn ra các hoạt động chế biến sản phẩm. Thuật ngữ này thường được sử dụng trong bộ phận OPERATIONS tại Pizza Hut Vietnam.",
+    "metadata": {
+      "source": "PHVN_HRA_List of Abbreviations and Technical Terms_Nov2021",
+      "category": "Technical_Terms",
+      "department": "OPERATIONS",
+      "term": "Khu vực BOH"
+    }
+  },
+  {
+    "content": "OM là Operations Manager – Quản lý khối vận hành. Thuật ngữ này thường được sử dụng trong bộ phận OPERATIONS tại Pizza Hut Vietnam.",
+    "metadata": {
+      "source": "PHVN_HRA_List of Abbreviations and Technical Terms_Nov2021",
+      "category": "Technical_Terms",
+      "department": "OPERATIONS",
+      "term": "OM"
+    }
+  },
+  {
+    "content": "AC là Area Coach – Quản lý khu vực. Thuật ngữ này thường được sử dụng trong bộ phận OPERATIONS tại Pizza Hut Vietnam.",
+    "metadata": {
+      "source": "PHVN_HRA_List of Abbreviations and Technical Terms_Nov2021",
+      "category": "Technical_Terms",
+      "department": "OPERATIONS",
+      "term": "AC"
+    }
+  },
+  {
+    "content": "RGM là Restaurant General Manager – Cửa hàng trưởng. Thuật ngữ này thường được sử dụng trong bộ phận OPERATIONS tại Pizza Hut Vietnam.",
+    "metadata": {
+      "source": "PHVN_HRA_List of Abbreviations and Technical Terms_Nov2021",
+      "category": "Technical_Terms",
+      "department": "OPERATIONS",
+      "term": "RGM"
+    }
+  },
+  {
+    "content": "SL là Shift Leader – Quản lý ca. Thuật ngữ này thường được sử dụng trong bộ phận OPERATIONS tại Pizza Hut Vietnam.",
+    "metadata": {
+      "source": "PHVN_HRA_List of Abbreviations and Technical Terms_Nov2021",
+      "category": "Technical_Terms",
+      "department": "OPERATIONS",
+      "term": "SL"
+    }
+  },
+  {
+    "content": "MGNT là Management Team – Cấp quản lý tại cửa hàng (bao gồm Quản lý ca, cửa hàng phó, cửa hàng trưởng). Thuật ngữ này thường được sử dụng trong bộ phận OPERATIONS tại Pizza Hut Vietnam.",
+    "metadata": {
+      "source": "PHVN_HRA_List of Abbreviations and Technical Terms_Nov2021",
+      "category": "Technical_Terms",
+      "department": "OPERATIONS",
+      "term": "MGNT"
+    }
+  },
+  {
+    "content": "TM là Team Member – Nhân viên nhà hàng. Thuật ngữ này thường được sử dụng trong bộ phận OPERATIONS tại Pizza Hut Vietnam.",
+    "metadata": {
+      "source": "PHVN_HRA_List of Abbreviations and Technical Terms_Nov2021",
+      "category": "Technical_Terms",
+      "department": "OPERATIONS",
+      "term": "TM"
+    }
+  },
+  {
+    "content": "RSC là Restaurant Supporting Center – Khối văn phòng hỗ trợ hoạt động của nhà hàng. Thuật ngữ này thường được sử dụng trong bộ phận OPERATIONS tại Pizza Hut Vietnam.",
+    "metadata": {
+      "source": "PHVN_HRA_List of Abbreviations and Technical Terms_Nov2021",
+      "category": "Technical_Terms",
+      "department": "OPERATIONS",
+      "term": "RSC"
+    }
+  },
+  {
+    "content": "LSM là Local Store Marketing - Hoạt động Marketing trong nhà hàng nhằm thu hút khách hàng biết đến sản phẩm và thương hiệu của mình. Thuật ngữ này thường được sử dụng trong bộ phận OPERATIONS tại Pizza Hut Vietnam.",
+    "metadata": {
+      "source": "PHVN_HRA_List of Abbreviations and Technical Terms_Nov2021",
+      "category": "Technical_Terms",
+      "department": "OPERATIONS",
+      "term": "LSM"
+    }
+  },
+  {
+    "content": "Chi phí nhân công (COL) là Chi phí tiền lương phải trả cho nhân viên nhà hàng bao gồm cả quản lý. Gồm có các loại thuế, phụ cấp, lương làm thêm giờ, chi trả nghỉ lễ, chi phí nghỉ bệnh v.v.. Thuật ngữ này thường được sử dụng trong bộ phận OPERATIONS tại Pizza Hut Vietnam.",
+    "metadata": {
+      "source": "PHVN_HRA_List of Abbreviations and Technical Terms_Nov2021",
+      "category": "Technical_Terms",
+      "department": "OPERATIONS",
+      "term": "Chi phí nhân công (COL)"
+    }
+  },
+  {
+    "content": "Lợi nhuận có thể kiểm soát - MCP là Management Control Profit - Doanh thu trừ cho những chi phí do quản lý kiểm soát. Cụ thể:. Thuật ngữ này thường được sử dụng trong bộ phận OPERATIONS tại Pizza Hut Vietnam.",
+    "metadata": {
+      "source": "PHVN_HRA_List of Abbreviations and Technical Terms_Nov2021",
+      "category": "Technical_Terms",
+      "department": "OPERATIONS",
+      "term": "Lợi nhuận có thể kiểm soát - MCP"
+    }
+  },
+  {
+    "content": "Bảng báo cáo lỗ lãi (P&L) là Profit & Loss. Thuật ngữ này thường được sử dụng trong bộ phận OPERATIONS tại Pizza Hut Vietnam.",
+    "metadata": {
+      "source": "PHVN_HRA_List of Abbreviations and Technical Terms_Nov2021",
+      "category": "Technical_Terms",
+      "department": "OPERATIONS",
+      "term": "Bảng báo cáo lỗ lãi (P&L)"
+    }
+  },
+  {
+    "content": "UC là Lợi nhuận có thể kiểm soát – Chi phí quảng cáo – Chi phí cố định. Thuật ngữ này thường được sử dụng trong bộ phận OPERATIONS tại Pizza Hut Vietnam.",
+    "metadata": {
+      "source": "PHVN_HRA_List of Abbreviations and Technical Terms_Nov2021",
+      "category": "Technical_Terms",
+      "department": "OPERATIONS",
+      "term": "UC"
+    }
+  },
+  {
+    "content": "BSC là Balance Score card – Bảng cân bằng số liệu. Thuật ngữ này thường được sử dụng trong bộ phận OPERATIONS tại Pizza Hut Vietnam.",
+    "metadata": {
+      "source": "PHVN_HRA_List of Abbreviations and Technical Terms_Nov2021",
+      "category": "Technical_Terms",
+      "department": "OPERATIONS",
+      "term": "BSC"
+    }
+  },
+  {
+    "content": "GES là Guest Experience Survey - Phiếu khảo sát, ghi nhận xét/ý kiến về thương hiệu nhà hàng của chúng ta trong đó đánh giá sự hài lòng, mức tiêu thu, tốc độ, cảm nhận về thức ăn, trải nghiệm và giá cả của khách hàng. Thuật ngữ này thường được sử dụng trong bộ phận OPERATIONS tại Pizza Hut Vietnam.",
+    "metadata": {
+      "source": "PHVN_HRA_List of Abbreviations and Technical Terms_Nov2021",
+      "category": "Technical_Terms",
+      "department": "OPERATIONS",
+      "term": "GES"
+    }
+  },
+  {
+    "content": "CARE là Courtesy - Lịch sự. Thuật ngữ này thường được sử dụng trong bộ phận OPERATIONS tại Pizza Hut Vietnam.",
+    "metadata": {
+      "source": "PHVN_HRA_List of Abbreviations and Technical Terms_Nov2021",
+      "category": "Technical_Terms",
+      "department": "OPERATIONS",
+      "term": "CARE"
+    }
+  },
+  {
+    "content": "C.H.A.M.P.S là C.H.A.M.P.S. viết tắt của sáu tiêu chí mà tất cả các khách hàng đều mong đợi. Thuật ngữ này thường được sử dụng trong bộ phận OPERATIONS tại Pizza Hut Vietnam.",
+    "metadata": {
+      "source": "PHVN_HRA_List of Abbreviations and Technical Terms_Nov2021",
+      "category": "Technical_Terms",
+      "department": "OPERATIONS",
+      "term": "C.H.A.M.P.S"
+    }
+  },
+  {
+    "content": "CSL - C.H.A.M.P.S. Standards Library là Tất cả những tiêu chuẩn hoạt động, được chia thành bốn cuốn: Service; Product; Equipment, Cleaning, và Maintenance; và Management – được dùng như các chương trình huấn luyện cơ bản và là tài liệu tham khảo cho tất cả các RGM có nhu cầu.. Thuật ngữ này thường được sử dụng trong bộ phận OPERATIONS tại Pizza Hut Vietnam.",
+    "metadata": {
+      "source": "PHVN_HRA_List of Abbreviations and Technical Terms_Nov2021",
+      "category": "Technical_Terms",
+      "department": "OPERATIONS",
+      "term": "CSL - C.H.A.M.P.S. Standards Library"
+    }
+  },
+  {
+    "content": "Developing Champions (DC) là Hệ thống đào tạo đội ngũ quản lý về khả năng Quản lý một ca làm việc và Quản lý nhà hàng. Thuật ngữ này thường được sử dụng trong bộ phận OPERATIONS tại Pizza Hut Vietnam.",
+    "metadata": {
+      "source": "PHVN_HRA_List of Abbreviations and Technical Terms_Nov2021",
+      "category": "Technical_Terms",
+      "department": "OPERATIONS",
+      "term": "Developing Champions (DC)"
+    }
+  },
+  {
+    "content": "Assured Customer Experence (ACE) là Kiểm tra, đánh giá về toàn bộ các vấn đề trong nhà hàng về vệ sinh sạch sẽ, chất lượng sản phẩm, chất lượng dịch vụ…các tiêu chí về Champs trong nhà hàng. Thuật ngữ này thường được sử dụng trong bộ phận OPERATIONS tại Pizza Hut Vietnam.",
+    "metadata": {
+      "source": "PHVN_HRA_List of Abbreviations and Technical Terms_Nov2021",
+      "category": "Technical_Terms",
+      "department": "OPERATIONS",
+      "term": "Assured Customer Experence (ACE)"
+    }
+  },
+  {
+    "content": "POS là Purchase of system - Hệ thống máy bán hàng, thanh toán tiền tại quầy thu ngân và theo dõi doanh thu. Thuật ngữ này thường được sử dụng trong bộ phận OPERATIONS tại Pizza Hut Vietnam.",
+    "metadata": {
+      "source": "PHVN_HRA_List of Abbreviations and Technical Terms_Nov2021",
+      "category": "Technical_Terms",
+      "department": "OPERATIONS",
+      "term": "POS"
+    }
+  },
+  {
+    "content": "FIFO là First in First out - Hàng nhập trước, Sử dụng trước. Thuật ngữ này thường được sử dụng trong bộ phận OPERATIONS tại Pizza Hut Vietnam.",
+    "metadata": {
+      "source": "PHVN_HRA_List of Abbreviations and Technical Terms_Nov2021",
+      "category": "Technical_Terms",
+      "department": "OPERATIONS",
+      "term": "FIFO"
+    }
+  },
+  {
+    "content": "TMTS là Team Member Training Scorecard – Bảng đánh giá năng lực đào tạo nhân viên. Thuật ngữ này thường được sử dụng trong bộ phận OPERATIONS tại Pizza Hut Vietnam.",
+    "metadata": {
+      "source": "PHVN_HRA_List of Abbreviations and Technical Terms_Nov2021",
+      "category": "Technical_Terms",
+      "department": "OPERATIONS",
+      "term": "TMTS"
+    }
+  },
+  {
+    "content": "CSR là CUSTOMER SERVICE REPRENTATIVE - Nhân viên bán hàng, nhận đơn hàng từ khách hàng và chăm sóc, phục vụ khách hàng cho các kênh Delivery, Take Away, Pickup. Thuật ngữ này thường được sử dụng trong bộ phận OPERATIONS tại Pizza Hut Vietnam.",
+    "metadata": {
+      "source": "PHVN_HRA_List of Abbreviations and Technical Terms_Nov2021",
+      "category": "Technical_Terms",
+      "department": "OPERATIONS",
+      "term": "CSR"
+    }
+  },
+  {
+    "content": "B2B là Business to Business – Sự hợp tác, trao đổi giữa 2 doanh nghiệp. Thuật ngữ này thường được sử dụng trong bộ phận OPERATIONS tại Pizza Hut Vietnam.",
+    "metadata": {
+      "source": "PHVN_HRA_List of Abbreviations and Technical Terms_Nov2021",
+      "category": "Technical_Terms",
+      "department": "OPERATIONS",
+      "term": "B2B"
+    }
+  },
+  {
+    "content": "CX là Customer Experience – Trải nghiệm của khách hàng. Thuật ngữ này thường được sử dụng trong bộ phận OPERATIONS tại Pizza Hut Vietnam.",
+    "metadata": {
+      "source": "PHVN_HRA_List of Abbreviations and Technical Terms_Nov2021",
+      "category": "Technical_Terms",
+      "department": "OPERATIONS",
+      "term": "CX"
+    }
+  },
+  {
+    "content": "EX là Employee Experience – Trải nghiệm của nhân viên. Thuật ngữ này thường được sử dụng trong bộ phận OPERATIONS tại Pizza Hut Vietnam.",
+    "metadata": {
+      "source": "PHVN_HRA_List of Abbreviations and Technical Terms_Nov2021",
+      "category": "Technical_Terms",
+      "department": "OPERATIONS",
+      "term": "EX"
+    }
+  },
+  {
+    "content": "MBO là Management by Objectives – Là 1 công cụ Quản lý hiệu suất nhân viên bằng các mục tiêu đề ra, được áp dụng cho RSC từ năm 2021 (thay cho việc xét duyệt KPI trước đây). Thuật ngữ này thường được sử dụng trong bộ phận OPERATIONS tại Pizza Hut Vietnam.",
+    "metadata": {
+      "source": "PHVN_HRA_List of Abbreviations and Technical Terms_Nov2021",
+      "category": "Technical_Terms",
+      "department": "OPERATIONS",
+      "term": "MBO"
+    }
+  },
+  {
+    "content": "KPI là Key Performance Indicators -. Thuật ngữ này thường được sử dụng trong bộ phận OPERATIONS tại Pizza Hut Vietnam.",
+    "metadata": {
+      "source": "PHVN_HRA_List of Abbreviations and Technical Terms_Nov2021",
+      "category": "Technical_Terms",
+      "department": "OPERATIONS",
+      "term": "KPI"
+    }
+  },
+  {
+    "content": "PA là Performance Appraisal – Đánh giá hiệu suất một năm của nhân viên. Thuật ngữ này thường được sử dụng trong bộ phận OPERATIONS tại Pizza Hut Vietnam.",
+    "metadata": {
+      "source": "PHVN_HRA_List of Abbreviations and Technical Terms_Nov2021",
+      "category": "Technical_Terms",
+      "department": "OPERATIONS",
+      "term": "PA"
+    }
+  },
+  {
+    "content": "HRA là Human Resources & Admin – Phòng Hành chính – Nhân sự. Thuật ngữ này thường được sử dụng trong bộ phận RSC tại Pizza Hut Vietnam.",
+    "metadata": {
+      "source": "PHVN_HRA_List of Abbreviations and Technical Terms_Nov2021",
+      "category": "Technical_Terms",
+      "department": "RSC",
+      "term": "HRA"
+    }
+  },
+  {
+    "content": "OD là Organisational Development – Bộ phận phát triển Văn hóa và Tổ chức. Thuật ngữ này thường được sử dụng trong bộ phận RSC tại Pizza Hut Vietnam.",
+    "metadata": {
+      "source": "PHVN_HRA_List of Abbreviations and Technical Terms_Nov2021",
+      "category": "Technical_Terms",
+      "department": "RSC",
+      "term": "OD"
+    }
+  },
+  {
+    "content": "TA là Talent Acquisition (Recruitment) – Bộ phận tuyển dụng. Thuật ngữ này thường được sử dụng trong bộ phận RSC tại Pizza Hut Vietnam.",
+    "metadata": {
+      "source": "PHVN_HRA_List of Abbreviations and Technical Terms_Nov2021",
+      "category": "Technical_Terms",
+      "department": "RSC",
+      "term": "TA"
+    }
+  },
+  {
+    "content": "C&B là Compensation & Benfits – Bộ phận phụ trách Lương và chế độ phúc lợi. Thuật ngữ này thường được sử dụng trong bộ phận RSC tại Pizza Hut Vietnam.",
+    "metadata": {
+      "source": "PHVN_HRA_List of Abbreviations and Technical Terms_Nov2021",
+      "category": "Technical_Terms",
+      "department": "RSC",
+      "term": "C&B"
+    }
+  },
+  {
+    "content": "EVP là Employee Value Proposition – Định giá giá trị nhân viên. Thuật ngữ này thường được sử dụng trong bộ phận RSC tại Pizza Hut Vietnam.",
+    "metadata": {
+      "source": "PHVN_HRA_List of Abbreviations and Technical Terms_Nov2021",
+      "category": "Technical_Terms",
+      "department": "RSC",
+      "term": "EVP"
+    }
+  },
+  {
+    "content": "EAP là Employee Assistance Program – Các chương trình hỗ trợ nhân viên. Thuật ngữ này thường được sử dụng trong bộ phận RSC tại Pizza Hut Vietnam.",
+    "metadata": {
+      "source": "PHVN_HRA_List of Abbreviations and Technical Terms_Nov2021",
+      "category": "Technical_Terms",
+      "department": "RSC",
+      "term": "EAP"
+    }
+  },
+  {
+    "content": "MD là Market Development – Phòng phát triển thị trường. Thuật ngữ này thường được sử dụng trong bộ phận RSC tại Pizza Hut Vietnam.",
+    "metadata": {
+      "source": "PHVN_HRA_List of Abbreviations and Technical Terms_Nov2021",
+      "category": "Technical_Terms",
+      "department": "RSC",
+      "term": "MD"
+    }
+  },
+  {
+    "content": "CnM là Construction & Maintenance – Phòng Xây dựng và Bảo trì. Thuật ngữ này thường được sử dụng trong bộ phận RSC tại Pizza Hut Vietnam.",
+    "metadata": {
+      "source": "PHVN_HRA_List of Abbreviations and Technical Terms_Nov2021",
+      "category": "Technical_Terms",
+      "department": "RSC",
+      "term": "CnM"
+    }
+  },
+  {
+    "content": "FIN là Finance – Phòng Tài chính kế toán. Thuật ngữ này thường được sử dụng trong bộ phận RSC tại Pizza Hut Vietnam.",
+    "metadata": {
+      "source": "PHVN_HRA_List of Abbreviations and Technical Terms_Nov2021",
+      "category": "Technical_Terms",
+      "department": "RSC",
+      "term": "FIN"
+    }
+  },
+  {
+    "content": "LnC là Legal & Compliance – Bộ phận pháp chế và tuân thủ. Thuật ngữ này thường được sử dụng trong bộ phận RSC tại Pizza Hut Vietnam.",
+    "metadata": {
+      "source": "PHVN_HRA_List of Abbreviations and Technical Terms_Nov2021",
+      "category": "Technical_Terms",
+      "department": "RSC",
+      "term": "LnC"
+    }
+  },
+  {
+    "content": "DTS là Digital Technology Service – Phòng Dịch vụ công nghệ kỹ thuật số. Thuật ngữ này thường được sử dụng trong bộ phận RSC tại Pizza Hut Vietnam.",
+    "metadata": {
+      "source": "PHVN_HRA_List of Abbreviations and Technical Terms_Nov2021",
+      "category": "Technical_Terms",
+      "department": "RSC",
+      "term": "DTS"
+    }
+  },
+  {
+    "content": "SCM là Supply Chain Management – Phòng Quản lý chuỗi cung ứng. Thuật ngữ này thường được sử dụng trong bộ phận RSC tại Pizza Hut Vietnam.",
+    "metadata": {
+      "source": "PHVN_HRA_List of Abbreviations and Technical Terms_Nov2021",
+      "category": "Technical_Terms",
+      "department": "RSC",
+      "term": "SCM"
+    }
+  },
+  {
+    "content": "DA là Data Analytics – Bộ phận phân tích dữ liệu. Thuật ngữ này thường được sử dụng trong bộ phận RSC tại Pizza Hut Vietnam.",
+    "metadata": {
+      "source": "PHVN_HRA_List of Abbreviations and Technical Terms_Nov2021",
+      "category": "Technical_Terms",
+      "department": "RSC",
+      "term": "DA"
+    }
+  },
+  {
+    "content": "OPS là Operations – Khối Vận hành. Thuật ngữ này thường được sử dụng trong bộ phận RSC tại Pizza Hut Vietnam.",
+    "metadata": {
+      "source": "PHVN_HRA_List of Abbreviations and Technical Terms_Nov2021",
+      "category": "Technical_Terms",
+      "department": "RSC",
+      "term": "OPS"
+    }
+  },
+  {
+    "content": "RnD là Research & Development  - Phòng Nghiên cứu phát triển sản phẩm. Thuật ngữ này thường được sử dụng trong bộ phận RSC tại Pizza Hut Vietnam.",
+    "metadata": {
+      "source": "PHVN_HRA_List of Abbreviations and Technical Terms_Nov2021",
+      "category": "Technical_Terms",
+      "department": "RSC",
+      "term": "RnD"
+    }
+  },
+  {
+    "content": "QA là Quality Assurance – Phòng quản lý chất lượng. Thuật ngữ này thường được sử dụng trong bộ phận RSC tại Pizza Hut Vietnam.",
+    "metadata": {
+      "source": "PHVN_HRA_List of Abbreviations and Technical Terms_Nov2021",
+      "category": "Technical_Terms",
+      "department": "RSC",
+      "term": "QA"
+    }
+  },
+  {
+    "content": "MKT là Marketing – Phòng Tiếp thị. Thuật ngữ này thường được sử dụng trong bộ phận RSC tại Pizza Hut Vietnam.",
+    "metadata": {
+      "source": "PHVN_HRA_List of Abbreviations and Technical Terms_Nov2021",
+      "category": "Technical_Terms",
+      "department": "RSC",
+      "term": "MKT"
+    }
+  },
+  {
+    "content": "EO là Executive Office – Văn phòng Tổng Giám đốc. Thuật ngữ này thường được sử dụng trong bộ phận RSC tại Pizza Hut Vietnam.",
+    "metadata": {
+      "source": "PHVN_HRA_List of Abbreviations and Technical Terms_Nov2021",
+      "category": "Technical_Terms",
+      "department": "RSC",
+      "term": "EO"
+    }
+  },
+  {
+    "content": "HOD là Head of Department – Giám đốc các Phòng/ Ban. Thuật ngữ này thường được sử dụng trong bộ phận RSC tại Pizza Hut Vietnam.",
+    "metadata": {
+      "source": "PHVN_HRA_List of Abbreviations and Technical Terms_Nov2021",
+      "category": "Technical_Terms",
+      "department": "RSC",
+      "term": "HOD"
+    }
+  },
+  {
+    "content": "CE / CEO là Chief Executive/ Chief Executive Officer – Tổng Giám đốc. Thuật ngữ này thường được sử dụng trong bộ phận RSC tại Pizza Hut Vietnam.",
+    "metadata": {
+      "source": "PHVN_HRA_List of Abbreviations and Technical Terms_Nov2021",
+      "category": "Technical_Terms",
+      "department": "RSC",
+      "term": "CE / CEO"
+    }
+  },
+  {
+    "content": "LFD là Large Format Display – Màn hình đặt tại khu vực gần Lễ tân để trình chiếu slides/ thông tin truyền thông nội bộ. Thuật ngữ này thường được sử dụng trong bộ phận RSC tại Pizza Hut Vietnam.",
+    "metadata": {
+      "source": "PHVN_HRA_List of Abbreviations and Technical Terms_Nov2021",
+      "category": "Technical_Terms",
+      "department": "RSC",
+      "term": "LFD"
+    }
+  },
+  {
+    "content": "WoF là Wall of Fame – Bảng vàng danh dự. Thuật ngữ này thường được sử dụng trong bộ phận RSC tại Pizza Hut Vietnam.",
+    "metadata": {
+      "source": "PHVN_HRA_List of Abbreviations and Technical Terms_Nov2021",
+      "category": "Technical_Terms",
+      "department": "RSC",
+      "term": "WoF"
+    }
+  },
+  {
+    "content": "BR là Business Review – Cuộc họp tổng kết về tình hình chung của Công ty. Thuật ngữ này thường được sử dụng trong bộ phận RSC tại Pizza Hut Vietnam.",
+    "metadata": {
+      "source": "PHVN_HRA_List of Abbreviations and Technical Terms_Nov2021",
+      "category": "Technical_Terms",
+      "department": "RSC",
+      "term": "BR"
+    }
+  },
+  {
+    "content": "BYA meeting là Beat Year Ago meeting – Cuộc họp để xem xét về Doanh thu và các kế hoạch phát triển về tiếp thị. Thuật ngữ này thường được sử dụng trong bộ phận RSC tại Pizza Hut Vietnam.",
+    "metadata": {
+      "source": "PHVN_HRA_List of Abbreviations and Technical Terms_Nov2021",
+      "category": "Technical_Terms",
+      "department": "RSC",
+      "term": "BYA meeting"
+    }
+  },
+  {
+    "content": "MM là Management Meeting – Cuộc họp giữa các cấp Quản lý. Thuật ngữ này thường được sử dụng trong bộ phận RSC tại Pizza Hut Vietnam.",
+    "metadata": {
+      "source": "PHVN_HRA_List of Abbreviations and Technical Terms_Nov2021",
+      "category": "Technical_Terms",
+      "department": "RSC",
+      "term": "MM"
+    }
+  },
+  {
+    "content": "SSSG là Same Store Sales Growth – Tăng trưởng doanh thu cùng kỳ cùng nhà hàng.. Thuật ngữ này thường được sử dụng trong bộ phận FINANCE tại Pizza Hut Vietnam.",
+    "metadata": {
+      "source": "PHVN_HRA_List of Abbreviations and Technical Terms_Nov2021",
+      "category": "Technical_Terms",
+      "department": "FINANCE",
+      "term": "SSSG"
+    }
+  },
+  {
+    "content": "SSTG là Same Store Transaction Growth – Tăng trưởng giao dịch cùng nhà hàng cùng kỳ. Thuật ngữ này thường được sử dụng trong bộ phận FINANCE tại Pizza Hut Vietnam.",
+    "metadata": {
+      "source": "PHVN_HRA_List of Abbreviations and Technical Terms_Nov2021",
+      "category": "Technical_Terms",
+      "department": "FINANCE",
+      "term": "SSTG"
+    }
+  },
+  {
+    "content": "TA là Ticket Average – Giá trị đơn hàng trung bình mà khách hàng mua sản phẩm. Thuật ngữ này thường được sử dụng trong bộ phận FINANCE tại Pizza Hut Vietnam.",
+    "metadata": {
+      "source": "PHVN_HRA_List of Abbreviations and Technical Terms_Nov2021",
+      "category": "Technical_Terms",
+      "department": "FINANCE",
+      "term": "TA"
+    }
+  },
+  {
+    "content": "WPSA là Weekly per Store Average – Trung bình các giao dịch tuần của 1 cửa hàng. Thuật ngữ này thường được sử dụng trong bộ phận FINANCE tại Pizza Hut Vietnam.",
+    "metadata": {
+      "source": "PHVN_HRA_List of Abbreviations and Technical Terms_Nov2021",
+      "category": "Technical_Terms",
+      "department": "FINANCE",
+      "term": "WPSA"
+    }
+  },
+  {
+    "content": "PATAM là Profit after Tax, Amortization and Minority Interest – Lợi nhuận thuần sau khi đã trừ tất cả các loại thuế, chi phí khấu hao tài sản cố định vô hình và lợi ích thiểu số. Thuật ngữ này thường được sử dụng trong bộ phận FINANCE tại Pizza Hut Vietnam.",
+    "metadata": {
+      "source": "PHVN_HRA_List of Abbreviations and Technical Terms_Nov2021",
+      "category": "Technical_Terms",
+      "department": "FINANCE",
+      "term": "PATAM"
+    }
+  },
+  {
+    "content": "EBITDA là Earnings Before Interest, Tax, Depreciation and Amortisation – Lợi nhuận trước thuế, lãi suất và các chi phí khấu hao tài sản cố định (hữu hình và vô hình). Thuật ngữ này thường được sử dụng trong bộ phận FINANCE tại Pizza Hut Vietnam.",
+    "metadata": {
+      "source": "PHVN_HRA_List of Abbreviations and Technical Terms_Nov2021",
+      "category": "Technical_Terms",
+      "department": "FINANCE",
+      "term": "EBITDA"
+    }
+  },
+  {
+    "content": "GP là Gross Profit – Lợi nhuận gộp. Thuật ngữ này thường được sử dụng trong bộ phận FINANCE tại Pizza Hut Vietnam.",
+    "metadata": {
+      "source": "PHVN_HRA_List of Abbreviations and Technical Terms_Nov2021",
+      "category": "Technical_Terms",
+      "department": "FINANCE",
+      "term": "GP"
+    }
+  },
+  {
+    "content": "YTD là Year to Date – (Số liệu) tính từ đầu năm đến thời điểm hiện tại. Thuật ngữ này thường được sử dụng trong bộ phận FINANCE tại Pizza Hut Vietnam.",
+    "metadata": {
+      "source": "PHVN_HRA_List of Abbreviations and Technical Terms_Nov2021",
+      "category": "Technical_Terms",
+      "department": "FINANCE",
+      "term": "YTD"
+    }
+  },
+  {
+    "content": "MTD là Month to Date – (Số liệu) tính từ đầu tháng đến thời điểm hiện tại. Thuật ngữ này thường được sử dụng trong bộ phận FINANCE tại Pizza Hut Vietnam.",
+    "metadata": {
+      "source": "PHVN_HRA_List of Abbreviations and Technical Terms_Nov2021",
+      "category": "Technical_Terms",
+      "department": "FINANCE",
+      "term": "MTD"
+    }
+  },
+  {
+    "content": "LMU là Loss Making Unit – Cửa hàng đang có mức lợi nhuận âm (lỗ). Thuật ngữ này thường được sử dụng trong bộ phận FINANCE tại Pizza Hut Vietnam.",
+    "metadata": {
+      "source": "PHVN_HRA_List of Abbreviations and Technical Terms_Nov2021",
+      "category": "Technical_Terms",
+      "department": "FINANCE",
+      "term": "LMU"
+    }
+  },
+  {
+    "content": "NNU là Net New Unit = Total opening stores in a year – Total closed stores in a year  - Tổng số cửa hàng mới thực mở trong năm. Thuật ngữ này thường được sử dụng trong bộ phận FINANCE tại Pizza Hut Vietnam.",
+    "metadata": {
+      "source": "PHVN_HRA_List of Abbreviations and Technical Terms_Nov2021",
+      "category": "Technical_Terms",
+      "department": "FINANCE",
+      "term": "NNU"
+    }
+  },
+  {
+    "content": "COSG là Cost of Good Sold – Chi phí đầu tư sản xuất sản phẩm. Thuật ngữ này thường được sử dụng trong bộ phận FINANCE tại Pizza Hut Vietnam.",
+    "metadata": {
+      "source": "PHVN_HRA_List of Abbreviations and Technical Terms_Nov2021",
+      "category": "Technical_Terms",
+      "department": "FINANCE",
+      "term": "COSG"
+    }
+  },
+  {
+    "content": "COL là Cost of Labor – Chi phí nhân công. Thuật ngữ này thường được sử dụng trong bộ phận FINANCE tại Pizza Hut Vietnam.",
+    "metadata": {
+      "source": "PHVN_HRA_List of Abbreviations and Technical Terms_Nov2021",
+      "category": "Technical_Terms",
+      "department": "FINANCE",
+      "term": "COL"
+    }
+  },
+  {
+    "content": "SPMH là Sales per Manhour – Doanh thu trên 1 giờ lao động của nhân viên. Thuật ngữ này thường được sử dụng trong bộ phận FINANCE tại Pizza Hut Vietnam.",
+    "metadata": {
+      "source": "PHVN_HRA_List of Abbreviations and Technical Terms_Nov2021",
+      "category": "Technical_Terms",
+      "department": "FINANCE",
+      "term": "SPMH"
+    }
+  },
+  {
+    "content": "TPMH là Transactions per Manhour – Số lượng giao dịch thực hiện được trong 1 giờ lao động của nhân viên. Thuật ngữ này thường được sử dụng trong bộ phận FINANCE tại Pizza Hut Vietnam.",
+    "metadata": {
+      "source": "PHVN_HRA_List of Abbreviations and Technical Terms_Nov2021",
+      "category": "Technical_Terms",
+      "department": "FINANCE",
+      "term": "TPMH"
+    }
+  },
+  {
+    "content": "FC là Forecast – Dự đoán. Thuật ngữ này thường được sử dụng trong bộ phận FINANCE tại Pizza Hut Vietnam.",
+    "metadata": {
+      "source": "PHVN_HRA_List of Abbreviations and Technical Terms_Nov2021",
+      "category": "Technical_Terms",
+      "department": "FINANCE",
+      "term": "FC"
+    }
+  },
+  {
+    "content": "ROI là Return on Investment – Hoàn lại vốn đầu tư. Thuật ngữ này thường được sử dụng trong bộ phận FINANCE tại Pizza Hut Vietnam.",
+    "metadata": {
+      "source": "PHVN_HRA_List of Abbreviations and Technical Terms_Nov2021",
+      "category": "Technical_Terms",
+      "department": "FINANCE",
+      "term": "ROI"
+    }
+  },
+  {
+    "content": "YoY là Year on Year – Năm trên năm, thường được tính bằng tỷ lệ %. Thuật ngữ này thường được sử dụng trong bộ phận FINANCE tại Pizza Hut Vietnam.",
+    "metadata": {
+      "source": "PHVN_HRA_List of Abbreviations and Technical Terms_Nov2021",
+      "category": "Technical_Terms",
+      "department": "FINANCE",
+      "term": "YoY"
+    }
+  },
+  {
+    "content": "FCDS là Fast Casual Digital Store (Website) – Kênh mua hàng thông qua trang web. Thuật ngữ này thường được sử dụng trong bộ phận MARKETING tại Pizza Hut Vietnam.",
+    "metadata": {
+      "source": "PHVN_HRA_List of Abbreviations and Technical Terms_Nov2021",
+      "category": "Technical_Terms",
+      "department": "MARKETING",
+      "term": "FCDS"
+    }
+  },
+  {
+    "content": "OLO là Online Ordering – Mua hàng trực tuyến. Thuật ngữ này thường được sử dụng trong bộ phận MARKETING tại Pizza Hut Vietnam.",
+    "metadata": {
+      "source": "PHVN_HRA_List of Abbreviations and Technical Terms_Nov2021",
+      "category": "Technical_Terms",
+      "department": "MARKETING",
+      "term": "OLO"
+    }
+  },
+  {
+    "content": "HMR là Home Meal Replacement – Các lựa chọn/ ưu đãi về sản phẩm thay thế bữa cơm nhà (dành cho Kênh Mua mang về và Giao hàng tận nơi). Thuật ngữ này thường được sử dụng trong bộ phận MARKETING tại Pizza Hut Vietnam.",
+    "metadata": {
+      "source": "PHVN_HRA_List of Abbreviations and Technical Terms_Nov2021",
+      "category": "Technical_Terms",
+      "department": "MARKETING",
+      "term": "HMR"
+    }
+  },
+  {
+    "content": "OOS là Out of Store channel (Delivery and Takeaway) – Các kênh khác ngoài Ăn tại chỗ. Thuật ngữ này thường được sử dụng trong bộ phận MARKETING tại Pizza Hut Vietnam.",
+    "metadata": {
+      "source": "PHVN_HRA_List of Abbreviations and Technical Terms_Nov2021",
+      "category": "Technical_Terms",
+      "department": "MARKETING",
+      "term": "OOS"
+    }
+  },
+  {
+    "content": "DEL là Delivery channel – Giao hàng tận nơi. Thuật ngữ này thường được sử dụng trong bộ phận MARKETING tại Pizza Hut Vietnam.",
+    "metadata": {
+      "source": "PHVN_HRA_List of Abbreviations and Technical Terms_Nov2021",
+      "category": "Technical_Terms",
+      "department": "MARKETING",
+      "term": "DEL"
+    }
+  },
+  {
+    "content": "TA là Takeaway channel – Mua mang về. Thuật ngữ này thường được sử dụng trong bộ phận MARKETING tại Pizza Hut Vietnam.",
+    "metadata": {
+      "source": "PHVN_HRA_List of Abbreviations and Technical Terms_Nov2021",
+      "category": "Technical_Terms",
+      "department": "MARKETING",
+      "term": "TA"
+    }
+  },
+  {
+    "content": "DI là Dine-in channel – Ăn tại chỗ. Thuật ngữ này thường được sử dụng trong bộ phận MARKETING tại Pizza Hut Vietnam.",
+    "metadata": {
+      "source": "PHVN_HRA_List of Abbreviations and Technical Terms_Nov2021",
+      "category": "Technical_Terms",
+      "department": "MARKETING",
+      "term": "DI"
+    }
+  },
+  {
+    "content": "C&C là Click & Collect (Takeaway orders through the Website) – Nhấn và nhận (hình thức đặt hàng trực tuyến thông qua trang web cho Kênh Mua mang về. Một hình thức đặt hàng theo lịch hẹn). Thuật ngữ này thường được sử dụng trong bộ phận MARKETING tại Pizza Hut Vietnam.",
+    "metadata": {
+      "source": "PHVN_HRA_List of Abbreviations and Technical Terms_Nov2021",
+      "category": "Technical_Terms",
+      "department": "MARKETING",
+      "term": "C&C"
+    }
+  },
+  {
+    "content": "BOGO là Buy One Get One promotion program – Chương trình ưu đãi Mua 1 tặng 1. Thuật ngữ này thường được sử dụng trong bộ phận MARKETING tại Pizza Hut Vietnam.",
+    "metadata": {
+      "source": "PHVN_HRA_List of Abbreviations and Technical Terms_Nov2021",
+      "category": "Technical_Terms",
+      "department": "MARKETING",
+      "term": "BOGO"
+    }
+  },
+  {
+    "content": "BIG 3 là Buy One Get Three promotion program – Chương trình ưu đãi Mua 3 tặng 1. Thuật ngữ này thường được sử dụng trong bộ phận MARKETING tại Pizza Hut Vietnam.",
+    "metadata": {
+      "source": "PHVN_HRA_List of Abbreviations and Technical Terms_Nov2021",
+      "category": "Technical_Terms",
+      "department": "MARKETING",
+      "term": "BIG 3"
+    }
+  },
+  {
+    "content": "ALC là Ala-Carte Menu – Menu chính chạy xuyên suốt. Thuật ngữ này thường được sử dụng trong bộ phận MARKETING tại Pizza Hut Vietnam.",
+    "metadata": {
+      "source": "PHVN_HRA_List of Abbreviations and Technical Terms_Nov2021",
+      "category": "Technical_Terms",
+      "department": "MARKETING",
+      "term": "ALC"
+    }
+  },
+  {
+    "content": "LTO là Limited-Term Offer – Chương trình giới thiệu sản phẩm mới có giới hạn về thời gian (1 tháng/ 3-4 tháng), thường ra mắt vào những dịp đặc biệt trong năm để thu hút khách hàng (Mùa Lễ hội cuối năm, mùa hè). Thuật ngữ này thường được sử dụng trong bộ phận MARKETING tại Pizza Hut Vietnam.",
+    "metadata": {
+      "source": "PHVN_HRA_List of Abbreviations and Technical Terms_Nov2021",
+      "category": "Technical_Terms",
+      "department": "MARKETING",
+      "term": "LTO"
+    }
+  },
+  {
+    "content": "FA là Food Aggregator – Dịch vụ giao hàng thông qua shipper công nghệ. Thuật ngữ này thường được sử dụng trong bộ phận MARKETING tại Pizza Hut Vietnam.",
+    "metadata": {
+      "source": "PHVN_HRA_List of Abbreviations and Technical Terms_Nov2021",
+      "category": "Technical_Terms",
+      "department": "MARKETING",
+      "term": "FA"
+    }
+  },
+  {
+    "content": "CSC là Call Center – Tổng đài chăm sóc khách hàng. Thuật ngữ này thường được sử dụng trong bộ phận MARKETING tại Pizza Hut Vietnam.",
+    "metadata": {
+      "source": "PHVN_HRA_List of Abbreviations and Technical Terms_Nov2021",
+      "category": "Technical_Terms",
+      "department": "MARKETING",
+      "term": "CSC"
+    }
+  },
+  {
+    "content": "SEO là Search Engine Optimisation - Việc tối ưu hóa trang web để được xếp hạng trong các trang kết quả của công cụ tìm kiếm.. Thuật ngữ này thường được sử dụng trong bộ phận DIGITAL tại Pizza Hut Vietnam.",
+    "metadata": {
+      "source": "PHVN_HRA_List of Abbreviations and Technical Terms_Nov2021",
+      "category": "Technical_Terms",
+      "department": "DIGITAL",
+      "term": "SEO"
+    }
+  },
+  {
+    "content": "SEM là Search Engine Marketing – là quá trình nhận lưu lượng truy cập từ các công cụ tìm kiếm hoặc hữu cơ (miễn phí) hoặc trả tiền (thông qua quảng cáo).. Thuật ngữ này thường được sử dụng trong bộ phận DIGITAL tại Pizza Hut Vietnam.",
+    "metadata": {
+      "source": "PHVN_HRA_List of Abbreviations and Technical Terms_Nov2021",
+      "category": "Technical_Terms",
+      "department": "DIGITAL",
+      "term": "SEM"
+    }
+  },
+  {
+    "content": "CR là Conversion rate - Những người đã hoàn thành hành động mong muốn trên trang web, chẳng hạn như mua hàng.. Thuật ngữ này thường được sử dụng trong bộ phận DIGITAL tại Pizza Hut Vietnam.",
+    "metadata": {
+      "source": "PHVN_HRA_List of Abbreviations and Technical Terms_Nov2021",
+      "category": "Technical_Terms",
+      "department": "DIGITAL",
+      "term": "CR"
+    }
+  },
+  {
+    "content": "CRO là Conversion rate optimization - Quá trình tối ưu hóa trang web để tăng tỷ lệ chuyển đổi.. Thuật ngữ này thường được sử dụng trong bộ phận DIGITAL tại Pizza Hut Vietnam.",
+    "metadata": {
+      "source": "PHVN_HRA_List of Abbreviations and Technical Terms_Nov2021",
+      "category": "Technical_Terms",
+      "department": "DIGITAL",
+      "term": "CRO"
+    }
+  },
+  {
+    "content": "CPC là Cost per Click - giá trị phải trả sau mỗi lần người dùng kích chuột vào quảng cáo. Thuật ngữ này thường được sử dụng trong bộ phận DIGITAL tại Pizza Hut Vietnam.",
+    "metadata": {
+      "source": "PHVN_HRA_List of Abbreviations and Technical Terms_Nov2021",
+      "category": "Technical_Terms",
+      "department": "DIGITAL",
+      "term": "CPC"
+    }
+  },
+  {
+    "content": "CPL là Cost per Lead - Số tiền mà một công ty phải trả để có được khách hàng tiềm năng.. Thuật ngữ này thường được sử dụng trong bộ phận DIGITAL tại Pizza Hut Vietnam.",
+    "metadata": {
+      "source": "PHVN_HRA_List of Abbreviations and Technical Terms_Nov2021",
+      "category": "Technical_Terms",
+      "department": "DIGITAL",
+      "term": "CPL"
+    }
+  },
+  {
+    "content": "CPA là Cost per Action - Mô hình mà nhà quảng cáo chỉ trả tiền cho hành động mà một người thực hiện như nhấp chuột, hiển thị hoặc đem lại doanh thu. Thuật ngữ này thường được sử dụng trong bộ phận DIGITAL tại Pizza Hut Vietnam.",
+    "metadata": {
+      "source": "PHVN_HRA_List of Abbreviations and Technical Terms_Nov2021",
+      "category": "Technical_Terms",
+      "department": "DIGITAL",
+      "term": "CPA"
+    }
+  },
+  {
+    "content": "CTA là Call to Action - Nút kêu gọi hành động, ví dụ: nút đăng ký, biểu mẫu đăng ký, mua, thích hoặc theo dõi.. Thuật ngữ này thường được sử dụng trong bộ phận DIGITAL tại Pizza Hut Vietnam.",
+    "metadata": {
+      "source": "PHVN_HRA_List of Abbreviations and Technical Terms_Nov2021",
+      "category": "Technical_Terms",
+      "department": "DIGITAL",
+      "term": "CTA"
+    }
+  },
+  {
+    "content": "PV là Page Views – Số lượng xem bài được đăng tải trên 1 trang nào đó. Thuật ngữ này thường được sử dụng trong bộ phận DIGITAL tại Pizza Hut Vietnam.",
+    "metadata": {
+      "source": "PHVN_HRA_List of Abbreviations and Technical Terms_Nov2021",
+      "category": "Technical_Terms",
+      "department": "DIGITAL",
+      "term": "PV"
+    }
+  },
+  {
+    "content": "UX là User Experience - Trải nghiệm chung mà người dùng có được với doanh nghiệp.. Thuật ngữ này thường được sử dụng trong bộ phận DIGITAL tại Pizza Hut Vietnam.",
+    "metadata": {
+      "source": "PHVN_HRA_List of Abbreviations and Technical Terms_Nov2021",
+      "category": "Technical_Terms",
+      "department": "DIGITAL",
+      "term": "UX"
+    }
+  },
+  {
+    "content": "CRM là Customer Relationship Management – Chương trình quản lý thông tin và dữ liệu khách hàng. Thuật ngữ này thường được sử dụng trong bộ phận DIGITAL tại Pizza Hut Vietnam.",
+    "metadata": {
+      "source": "PHVN_HRA_List of Abbreviations and Technical Terms_Nov2021",
+      "category": "Technical_Terms",
+      "department": "DIGITAL",
+      "term": "CRM"
+    }
+  },
+  {
+    "content": "GA là Google Analytics - Một dịch vụ của Google cung cấp các số liệu thống kê chi tiết về lưu lượng truy cập trang web của 1 Doanh nghiệp.. Thuật ngữ này thường được sử dụng trong bộ phận DIGITAL tại Pizza Hut Vietnam.",
+    "metadata": {
+      "source": "PHVN_HRA_List of Abbreviations and Technical Terms_Nov2021",
+      "category": "Technical_Terms",
+      "department": "DIGITAL",
+      "term": "GA"
+    }
+  }
+]

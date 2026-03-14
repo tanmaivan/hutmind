@@ -1,0 +1,342 @@
+[
+  {
+    "content": "Ngữ cảnh: \nNội dung: UPDATE: 5/ August/ 2017 CODE: IT-SP-01\nVALID FOR: All staff of PHV\nDISTRIBUTION: IT Management, Employee\nSUBJECT: Software Asset Management Policy and Procedure\nSOFTWARE ASSET MANAGEMENT POLICY\nVersion Control\nVersion Number Description Prepared Date\nVersion Number Description Approved Date\nSoftware Asset Management Policy and procedure\n\n[Bảng chi tiết phần mềm/quy trình]:\nUPDATE: | 5/ August/ 2017 | CODE: | IT-SP-01\nVALID FOR: | All staff of PHV\nDISTRIBUTION: | IT Management, Employee\nSUBJECT: | Software Asset Management Policy and Procedure\n\n\n[Bảng chi tiết phần mềm/quy trình]:\nVersion Number | Description | Prepared | Date\n1.01 | Created document | To Huynh | August 2017\n\n\n[Bảng chi tiết phần mềm/quy trình]:\nVersion Number | Description | Approved | Date\n1.01 | Created document | Nha Nguyen | August 2017\n\nTable of Contents\nSoftware Asset Management Policy and procedure",
+    "metadata": {
+      "source": "Software_Policy_2017",
+      "category": "IT_Policy",
+      "hierarchy": "",
+      "page": 3
+    }
+  },
+  {
+    "content": "Ngữ cảnh: 1. Introduction\nNội dung: [1. Introduction]\nThe document supports for Pizza Hut Viet Nam (PHV) Company to control and follow\nSoftware Asset Management (SAM). It lays down the PHV policies and procedures in\nrespect of management of its software assets. The means of signifying agreement with\nthese policies and procedures is through the PHV Acceptable Use Policy.\nImplementation of the guidelines will provide assurance to departments and PHV staff\nthat:\n- A clear management policy for projects for open source, licensed and customized\nsoftware is established.\n- Project based software assets are integrated with existing software assets in the\ndepartment.\n- A clear software asset ownership policy covering the entire asset life‐cycle of the\nassets and project is established.\n- To prevent use of illegal software.\n- To comply with software license conditions is adequately monitored.\n- There are the appropriate number of licenses for each item of software in use.\n- There are effective controls in place for the physical security of software media.",
+    "metadata": {
+      "source": "Software_Policy_2017",
+      "category": "IT_Policy",
+      "hierarchy": "1. Introduction",
+      "page": 3
+    }
+  },
+  {
+    "content": "Ngữ cảnh: 2. Software Asset Management Policy Statement\nNội dung: [2. Software Asset Management Policy Statement]\nIt is the policy of PHV to respect all computer software copyrights and adhere to the\nTerms & Conditions of any license to which PHV is a party. PHV will not condone the\nuse of any software that does not have a licence and any employee found to be using, or\nin possession of unlicensed software may be the subject of disciplinary procedures.\nIt is the responsibility of all PHV employees, consultants, temporary or contract workers\nto read, fully understand and signify agreement to PHV’s Acceptable Use Policy.",
+    "metadata": {
+      "source": "Software_Policy_2017",
+      "category": "IT_Policy",
+      "hierarchy": "2. Software Asset Management Policy Statement",
+      "page": 3
+    }
+  },
+  {
+    "content": "Ngữ cảnh: 3. Software Procedure for Implementation\nNội dung: [3. Software Procedure for Implementation]\nThe initial planning and implementation of a SAM framework that should be addressed\nbefore developing an implementation plan. These include, but are not limited to:\no Gaining senior management support\no An assessment of the risks involved in not implementing: over‐licensing, under‐\nlicensing, increased expenditure, security breaches, software compatibility issues,\nlost time and lack of technical support and product upgrades.\nSoftware Asset Management Policy and procedure\no An assessment of benefits of implementing: savings through purchasing only\nwhat is needed when it is needed, employees being able to work more efficiently,\nassists with the compilation of an accurate budget, ability to manage and monitor\nusage to link with IT Dept planning.\no The development of a business case to demonstrate the effectiveness of the\nframework\no Consideration of what functions may be centralized: for example, license\nmanagement, procurement and software asset registers.\no Long term management: including continuous improvement, upgrades,\ncompliance and audits\nSoftware needs to be controlled throughout its entire lifecycle, form the initial request to\nde‐installation from a machine.\nThe Lifecycle diagram below (fig. 1) outlines all of the key procedures that should be\nestablished to support and maintain a successful framework.\nFigure 1",
+    "metadata": {
+      "source": "Software_Policy_2017",
+      "category": "IT_Policy",
+      "hierarchy": "3. Software Procedure for Implementation",
+      "page": 4
+    }
+  },
+  {
+    "content": "Ngữ cảnh: 4. Software Acquisition\nNội dung: [4. Software Acquisition]\nSoftware Asset Management Policy and procedure\nAll computer software acquired by PHV must be purchased through the IT Dept. No\nuser may purchase software directly and the purchase of software by any other means\nsuch as credit cards, expense accounts or petty cash is expressly forbidden.\nSpecialist software of department or special user should be consider and approved by\nHODs/ CEO and IT Manager.",
+    "metadata": {
+      "source": "Software_Policy_2017",
+      "category": "IT_Policy",
+      "hierarchy": "4. Software Acquisition",
+      "page": 5
+    }
+  },
+  {
+    "content": "Ngữ cảnh: 5. Software Delivery\nNội dung: [5. Software Delivery]\nAll newly purchased software will be delivered to the IT Dept so that licenses can be\nchecked and Asset Registers updated. No other staff may take delivery of computer\nsoftware.",
+    "metadata": {
+      "source": "Software_Policy_2017",
+      "category": "IT_Policy",
+      "hierarchy": "5. Software Delivery",
+      "page": 5
+    }
+  },
+  {
+    "content": "Ngữ cảnh: 6. Software Installation\nNội dung: [6. Software Installation]\nComputer software can only be installed by the IT Dept, under no circumstances is\ncomputer software be installed by any other PHV staff.\nThe Software standard for all user are listed below.\n Application for Department: depending on department requirement and specify\napplication. IT support will install the software to user.\no Finance & Accounting: Sun System, Q&A, Sales Audit Report\no Inventory: SAP B1, Winham\no Restaurant: Pointsoft, Loyalty program, Pizza Card, Call Center, Intranet (Support\nTicket), Ordering Online, Guest Survey\no Human Resources: Cadena HR System\n Software standard: the software standard will be install to all user who working at RSC\nand for manager PC at store.\nThe software standard listed below:\nSOFTWARE LIST\nSpecial Software/ Department\nStandard Software Application\nOperation System : Window OS 7/10 - 32/64bit\nMicrosoft Office standard 2007-2010-2013\nSophos end point protection V10\nGet approval from head of\nUnikey 4.0\ndepartment\nVNC/Team view Software\nFonts VN\nPDF Reader\n- Evaluation (Freeware and Shareware)\nShareware, Freeware & Public free software is bound by the same policies and\nprocedures as all software. No user may install any free or evaluation software onto\nPHV systems.\nSoftware Asset Management Policy and procedure\n\n[Bảng chi tiết phần mềm/quy trình]:\nSOFTWARE LIST\nStandard Software | Special Software/ Department Application\nOperation System : Window OS 7/10 - 32/64bit | Get approval from head of department\nMicrosoft Office standard 2007-2010-2013\nSophos end point protection V10\nUnikey 4.0\nVNC/Team view Software\nFonts VN\nPDF Reader\n\nWhere a user has a valid business requirement for a piece of shareware or freeware\nthey will use the standard software acquisition procedure. Upon the appropriate\nmanagement agreements, the software will be obtained, tested and loaded to the user.\nThe Definitive Software Library in appendix 1/ 12.3 is definition the software free has\npassed for the software verify and may ready for use by request.\nIf this software is shareware, and requires deletion or licensing after a trial period, the\nuser will be contacted prior to the end of trial date to ascertain whether he or she wishes\nto retain use of the software. If the software is to be retained usual acquisition procedures\nwill be followed. If it is not required the software will be completely uninstalled.\n- Internet Downloads\nNo software, whatsoever, may be downloaded from the Internet.\nIf a user has a valid and approved reason for an item of software available on the\ninternet, he/she will inform the IT support team using the standard software acquisition\nprocedure. The IT support Team will then check the licensing requirements for the\nsoftware, where appropriate purchase a license, download the software, virus check the\ndownload and benchmark the software, prior to delivery to the end user.\n- Email Attachments\nUsers may not load or use any software received via e-mail. Sharing software via email\nis prohibited.\nIf you receive any unexpected files, which do not appear to be standard business\ndocuments, inform the IT Dept. Immediately.\n- Mobile/Laptop Users\nPHV software policies apply to mobile users and all laptops will be equipped with\nauditing software for regular checks.\nLaptops used in PHV office will be subject to the same audit regime as desktop\nmachine. Users with laptops that are not regularly attached to the PHV network will be\nsubject to periodic recall for update and audit. See Auditing.\n- Auditing\nAll users must be aware that the PHV electronically audits all computers on a regular\nbasis. Sample random audits also may be carried out.\nThe PHV uses auditing software on a regular basis to ascertain whether all of the\nsoftware loaded is legal. The audit is checked and reconciled with the Definitive\nSoftware Library and all unauthorized software is deleted. The source of the\nunauthorized software will be ascertained and disciplinary action may be taken.",
+    "metadata": {
+      "source": "Software_Policy_2017",
+      "category": "IT_Policy",
+      "hierarchy": "6. Software Installation",
+      "page": 6
+    }
+  },
+  {
+    "content": "Ngữ cảnh: 7. Software Movements\nNội dung: [7. Software Movements]\nIn the event of staff relocations Department Managers are email to IT support team for\nthe alert and preparation. As part of this procedure they are to ascertain whether new\nsoftware will be required. Old software can be re-distributed and the new locations of\nstaff, hardware, network points and software for the asset register recorded by the IT\nsupport and inventory member\nSoftware Asset Management Policy and procedure\nAll staff or department moves must be controlled through the HODs and HR\nmanagement request so that the appropriate software can be added or removed and\nasset registers updated.",
+    "metadata": {
+      "source": "Software_Policy_2017",
+      "category": "IT_Policy",
+      "hierarchy": "7. Software Movements",
+      "page": 7
+    }
+  },
+  {
+    "content": "Ngữ cảnh: 8. Software Retirement & Disposal\nNội dung: [8. Software Retirement & Disposal]\nThe retirement of Software/Hardware may only be carried out by the IT Dept with\napproved from FIN/ IT management/ CEO.\nOnce a computer is deemed ready for disposal, all software will be removed. Where\nthe license permits, the software will be re-used, stored for future use or retired.\nSoftware purchased as part of a computer will be disposed of with the computer as\nthese licenses are non-transferable.\nAll PHV data will be removed and the hard disk will be securely cleaned or physically\ndestroyed. The asset register will be updated and the certificate of disposal/destruction\nwill be held on file.",
+    "metadata": {
+      "source": "Software_Policy_2017",
+      "category": "IT_Policy",
+      "hierarchy": "8. Software Retirement & Disposal",
+      "page": 7
+    }
+  },
+  {
+    "content": "Ngữ cảnh: 9. Compliance and Documentation\nNội dung: [9. Compliance and Documentation]\nAll licenses, invoices copy and original media of the software are collected and\nsecurely by the IT Dept.\nAll media must be tracking in and out by authorized person as defined of IT manager.\nA periodic check will be carried out by accountant and IT inventory to ensure the\nactual media matches with the inventory.",
+    "metadata": {
+      "source": "Software_Policy_2017",
+      "category": "IT_Policy",
+      "hierarchy": "9. Compliance and Documentation",
+      "page": 7
+    }
+  },
+  {
+    "content": "Ngữ cảnh: 10. Disaster Recovery\nNội dung: [10. Disaster Recovery]\nThe owner of every business process and support process is responsible for ensuring that\nan appropriate business resumption risk assessment is carried out. Where that\nresumption includes the redeployment or reinstallation of software in support of business\nactivities the software licencing must comply with this Policy and the conditions of the\noriginal Vendor license.\nThe IT Dept is responsible for regularly reviewing its ability to recover or re-supply the\norganization, within the timeframe required, with all the business software that will be\nneeded to effect recovery of the business in the event of a major disaster",
+    "metadata": {
+      "source": "Software_Policy_2017",
+      "category": "IT_Policy",
+      "hierarchy": "10. Disaster Recovery",
+      "page": 7
+    }
+  },
+  {
+    "content": "Ngữ cảnh: 11. Disciplinary Procedures for Breach\nNội dung: [11. Disciplinary Procedures for Breach]\nThe PHV’s software policies are implemented to safeguard the PHV from the many\nvarying laws surrounding software use. Any user found to be in breach of these policies\nmay be subject to disciplinary procedures.",
+    "metadata": {
+      "source": "Software_Policy_2017",
+      "category": "IT_Policy",
+      "hierarchy": "11. Disciplinary Procedures for Breach",
+      "page": 7
+    }
+  },
+  {
+    "content": "Ngữ cảnh: 12. Appendix – Procedures and Form\nNội dung: [12. Appendix – Procedures and Form]",
+    "metadata": {
+      "source": "Software_Policy_2017",
+      "category": "IT_Policy",
+      "hierarchy": "12. Appendix – Procedures and Form",
+      "page": 7
+    }
+  },
+  {
+    "content": "Ngữ cảnh: 12. Appendix – Procedures and Form > 12.1 Acquisition, Delivery & Installation\nNội dung: [12.1 Acquisition, Delivery & Installation]\nSoftware Asset Management Policy and procedure\nThe user is to call the IT support team requesting a quote for the software and complete\nthe Equipment/ software Request Form with obtain the relevant authorization signature\nand pass to the IT dept as a Non Standard Request.\nIT support verify the software request and process for the software ordering\nOnce delivered, the software will be added to the Authorised Software List against the\nspecific user.\nThe software will then be identified to the audit tool and loaded to the user’s workstation\nby IT support team.\nThe software will be added to the Definitive Software List and the media will be placed\nin the secure storage area, controlled by the IT Dept .",
+    "metadata": {
+      "source": "Software_Policy_2017",
+      "category": "IT_Policy",
+      "hierarchy": "12. Appendix – Procedures and Form > 12.1 Acquisition, Delivery & Installation",
+      "page": 8
+    }
+  },
+  {
+    "content": "Ngữ cảnh: 12. Appendix – Procedures and Form > 12.2 Definitive Software Library\nNội dung: [12.2 Definitive Software Library]\nThe list software as below to certify that has been passed software verify and may\nready for use by request.\nDefinitive Software Library\nNo Department Software Standard soft Freeware authorized\nSun System, Q&A, Sales Audit Operation System : Window OS",
+    "metadata": {
+      "source": "Software_Policy_2017",
+      "category": "IT_Policy",
+      "hierarchy": "12. Appendix – Procedures and Form > 12.2 Definitive Software Library",
+      "page": 8
+    }
+  },
+  {
+    "content": "Ngữ cảnh: 1 Report 7/10 - 32/64bit PDF Printer\nNội dung: [1 Report 7/10 - 32/64bit PDF Printer]\nMicrosoft Office standard 2007-",
+    "metadata": {
+      "source": "Software_Policy_2017",
+      "category": "IT_Policy",
+      "hierarchy": "1 Report 7/10 - 32/64bit PDF Printer",
+      "page": 8
+    }
+  },
+  {
+    "content": "Ngữ cảnh: 2 Inventory: SAP B1, Winham 2010-2013 PDF Merge\nNội dung: [2 Inventory: SAP B1, Winham 2010-2013 PDF Merge]\nPoint soft, Loyalty program,\nPizza Card, Call Center,\nIntranet (Support Ticket),\nOrdering Online, Guest",
+    "metadata": {
+      "source": "Software_Policy_2017",
+      "category": "IT_Policy",
+      "hierarchy": "2 Inventory: SAP B1, Winham 2010-2013 PDF Merge",
+      "page": 8
+    }
+  },
+  {
+    "content": "Ngữ cảnh: 3 Survey Sophos end point protection V10 Itunes - apple\nNội dung: [3 Survey Sophos end point protection V10 Itunes - apple]",
+    "metadata": {
+      "source": "Software_Policy_2017",
+      "category": "IT_Policy",
+      "hierarchy": "3 Survey Sophos end point protection V10 Itunes - apple",
+      "page": 8
+    }
+  },
+  {
+    "content": "Ngữ cảnh: 4 Cadena HR System Unikey 4.0 MS SQL native client\nNội dung: [4 Cadena HR System Unikey 4.0 MS SQL native client]",
+    "metadata": {
+      "source": "Software_Policy_2017",
+      "category": "IT_Policy",
+      "hierarchy": "4 Cadena HR System Unikey 4.0 MS SQL native client",
+      "page": 8
+    }
+  },
+  {
+    "content": "Ngữ cảnh: 5 VNC/Team view Software MS SQL server express version\nNội dung: [5 VNC/Team view Software MS SQL server express version]",
+    "metadata": {
+      "source": "Software_Policy_2017",
+      "category": "IT_Policy",
+      "hierarchy": "5 VNC/Team view Software MS SQL server express version",
+      "page": 8
+    }
+  },
+  {
+    "content": "Ngữ cảnh: 6 Fonts VN MS SQL studio free tool\nNội dung: [6 Fonts VN MS SQL studio free tool]",
+    "metadata": {
+      "source": "Software_Policy_2017",
+      "category": "IT_Policy",
+      "hierarchy": "6 Fonts VN MS SQL studio free tool",
+      "page": 8
+    }
+  },
+  {
+    "content": "Ngữ cảnh: 7 PDF Reader runas tool\nNội dung: [7 PDF Reader runas tool]\n8 mdf reader advance free",
+    "metadata": {
+      "source": "Software_Policy_2017",
+      "category": "IT_Policy",
+      "hierarchy": "7 PDF Reader runas tool",
+      "page": 8
+    }
+  },
+  {
+    "content": "Ngữ cảnh: 9 Adobe Flash Player\nNội dung: [9 Adobe Flash Player]",
+    "metadata": {
+      "source": "Software_Policy_2017",
+      "category": "IT_Policy",
+      "hierarchy": "9 Adobe Flash Player",
+      "page": 8
+    }
+  },
+  {
+    "content": "Ngữ cảnh: 10 K-Lite Codec Pack\nNội dung: [10 K-Lite Codec Pack]",
+    "metadata": {
+      "source": "Software_Policy_2017",
+      "category": "IT_Policy",
+      "hierarchy": "10 K-Lite Codec Pack",
+      "page": 8
+    }
+  },
+  {
+    "content": "Ngữ cảnh: 11 NetDVR_V3\nNội dung: [11 NetDVR_V3]",
+    "metadata": {
+      "source": "Software_Policy_2017",
+      "category": "IT_Policy",
+      "hierarchy": "11 NetDVR_V3",
+      "page": 8
+    }
+  },
+  {
+    "content": "Ngữ cảnh: 12 Teamview\nNội dung: [12 Teamview]",
+    "metadata": {
+      "source": "Software_Policy_2017",
+      "category": "IT_Policy",
+      "hierarchy": "12 Teamview",
+      "page": 8
+    }
+  },
+  {
+    "content": "Ngữ cảnh: 13 UltraView\nNội dung: [13 UltraView]",
+    "metadata": {
+      "source": "Software_Policy_2017",
+      "category": "IT_Policy",
+      "hierarchy": "13 UltraView",
+      "page": 8
+    }
+  },
+  {
+    "content": "Ngữ cảnh: 14 VNC\nNội dung: [14 VNC]",
+    "metadata": {
+      "source": "Software_Policy_2017",
+      "category": "IT_Policy",
+      "hierarchy": "14 VNC",
+      "page": 8
+    }
+  },
+  {
+    "content": "Ngữ cảnh: 15 Zalo\nNội dung: [15 Zalo]",
+    "metadata": {
+      "source": "Software_Policy_2017",
+      "category": "IT_Policy",
+      "hierarchy": "15 Zalo",
+      "page": 8
+    }
+  },
+  {
+    "content": "Ngữ cảnh: 16 Viber\nNội dung: [16 Viber]",
+    "metadata": {
+      "source": "Software_Policy_2017",
+      "category": "IT_Policy",
+      "hierarchy": "16 Viber",
+      "page": 8
+    }
+  },
+  {
+    "content": "Ngữ cảnh: 17 Skype\nNội dung: [17 Skype]",
+    "metadata": {
+      "source": "Software_Policy_2017",
+      "category": "IT_Policy",
+      "hierarchy": "17 Skype",
+      "page": 8
+    }
+  },
+  {
+    "content": "Ngữ cảnh: 18 Pdf foxit reader\nNội dung: [18 Pdf foxit reader]\nweb browser: Chrome/firefox/\n19 cococ",
+    "metadata": {
+      "source": "Software_Policy_2017",
+      "category": "IT_Policy",
+      "hierarchy": "18 Pdf foxit reader",
+      "page": 8
+    }
+  },
+  {
+    "content": "Ngữ cảnh: 20 ACD See free version\nNội dung: [20 ACD See free version]\nSoftware Asset Management Policy and procedure\n\n[Bảng chi tiết phần mềm/quy trình]:\nNo | Department Software | Standard soft | Freeware authorized\n1 | Sun System, Q&A, Sales Audit Report | Operation System : Window OS 7/10 - 32/64bit | PDF Printer\n2 | Inventory: SAP B1, Winham | Microsoft Office standard 2007- 2010-2013 | PDF Merge\n3 | Point soft, Loyalty program, Pizza Card, Call Center, Intranet (Support Ticket), Ordering Online, Guest Survey | Sophos end point protection V10 | Itunes - apple\n4 | Cadena HR System | Unikey 4.0 | MS SQL native client\n5 | VNC/Team view Software | MS SQL server express version\n6 | Fonts VN | MS SQL studio free tool\n7 | PDF Reader | runas tool\n8 | mdf reader advance free\n9 | Adobe Flash Player\n10 | K-Lite Codec Pack\n11 | NetDVR_V3\n12 | Teamview\n13 | UltraView\n14 | VNC\n15 | Zalo\n16 | Viber\n17 | Skype\n18 | Pdf foxit reader\n19 | web browser: Chrome/firefox/ cococ\n20 | ACD See free version\n",
+    "metadata": {
+      "source": "Software_Policy_2017",
+      "category": "IT_Policy",
+      "hierarchy": "20 ACD See free version",
+      "page": 9
+    }
+  },
+  {
+    "content": "Ngữ cảnh: 20 ACD See free version > 12.3 Software hand over form\nNội dung: [12.3 Software hand over form]\nThe form to hand over between IT team and user.\nSoftware Asset Management Policy and procedure",
+    "metadata": {
+      "source": "Software_Policy_2017",
+      "category": "IT_Policy",
+      "hierarchy": "20 ACD See free version > 12.3 Software hand over form",
+      "page": 10
+    }
+  },
+  {
+    "content": "Ngữ cảnh: 20 ACD See free version > 12.4 Software record tools\nNội dung: [12.4 Software record tools]\nThe Software record tool to determine the recording and monitoring for software asset.\nListed below:",
+    "metadata": {
+      "source": "Software_Policy_2017",
+      "category": "IT_Policy",
+      "hierarchy": "20 ACD See free version > 12.4 Software record tools",
+      "page": 10
+    }
+  },
+  {
+    "content": "Ngữ cảnh: 1. Microsoft Excel\nNội dung: [1. Microsoft Excel]",
+    "metadata": {
+      "source": "Software_Policy_2017",
+      "category": "IT_Policy",
+      "hierarchy": "1. Microsoft Excel",
+      "page": 10
+    }
+  },
+  {
+    "content": "Ngữ cảnh: 2. Microsoft Word\nNội dung: [2. Microsoft Word]",
+    "metadata": {
+      "source": "Software_Policy_2017",
+      "category": "IT_Policy",
+      "hierarchy": "2. Microsoft Word",
+      "page": 10
+    }
+  },
+  {
+    "content": "Ngữ cảnh: 3. Software asset tool.\nNội dung: [3. Software asset tool.]\nSoftware Asset Management Policy and procedure",
+    "metadata": {
+      "source": "Software_Policy_2017",
+      "category": "IT_Policy"
+    }
+  }
+]
